@@ -1,0 +1,26 @@
+{
+  "name": "grunt-starter",
+  "version": "1.0.0",
+  "description": "Starter for basic HTML5/CSS projects",
+  "main": "gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "grunt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anuragsr/grunt-starter.git"
+  },
+  "author": "Anurag Srivastava",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anuragsr/grunt-starter/issues"
+  },
+  "homepage": "https://github.com/anuragsr/grunt-starter#readme",
+  "dependencies": {
+    "grunt": "^1.3.0",
+    "grunt-contrib-connect": "^3.0.0",
+    "grunt-contrib-sass": "^2.0.0",
+    "grunt-contrib-watch": "^1.1.0"
+  }
+}

@@ -1,0 +1,15 @@
+body { 
+  overflow: hidden;
+  font-family: $pop;
+  background: #333;
+}
+
+.mobile-only{
+	@include media('>mob') { display: none; }	
+}
+
+.desktop-only{
+	@include media('<=mob') { display: none; }
+}
+
+input:focus{ outline: none; }

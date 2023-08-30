@@ -1,0 +1,6 @@
+# dependencies
+/node_modules
+
+#misc
+/extra
+vs.code-workspace

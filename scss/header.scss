@@ -1,0 +1,22 @@
+.navbar{
+  padding-top: 40px;
+  //background: $w;
+  background: #333;
+  .navbar-brand{
+    display: flex;
+    img{ height: 58px; }
+    .ctn-heading{
+      margin-left: 22px;
+      .title{
+        font-size: 24px;
+        line-height: 36px;
+        color: $pr; 
+      }
+      .sub-title{
+        font-size: 14px;
+        line-height: 21px;
+        color: #777;
+      }
+    }
+  }
+}
