@@ -1,2 +1,6 @@
-// Add more font vars here to use in other files
-$pop: 'Poppins';
+$hel: 'Helvetica Neue LT Pro';
+
+@font-face {
+  font-family: $hel;
+  src: url("../fonts/HelveticaNeueLTProRoman.otf") format('opentype');
+}

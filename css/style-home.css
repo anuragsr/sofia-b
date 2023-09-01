@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "Helvetica Neue LT Pro";
+  src: url("../fonts/HelveticaNeueLTProRoman.otf") format("opentype");
+}
 footer {
   display: flex;
   justify-content: center;
@@ -6,7 +10,7 @@ footer {
 
 body {
   overflow: hidden;
-  font-family: "Poppins";
+  font-family: "Helvetica Neue LT Pro";
   background: #333;
 }
 
@@ -26,35 +30,24 @@ input:focus {
   outline: none;
 }
 
-.navbar {
-  padding-top: 40px;
-  background: #333;
-}
-.navbar .navbar-brand {
-  display: flex;
-}
-.navbar .navbar-brand img {
-  height: 58px;
-}
-.navbar .navbar-brand .ctn-heading {
-  margin-left: 22px;
-}
-.navbar .navbar-brand .ctn-heading .title {
-  font-size: 24px;
-  line-height: 36px;
-  color: #005450;
-}
-.navbar .navbar-brand .ctn-heading .sub-title {
-  font-size: 14px;
-  line-height: 21px;
-  color: #777;
+section {
+  height: 100vh;
 }
 
-main {
-  margin-top: 140px;
-  height: 60vh;
+nav {
+  font-family: "Helvetica Neue LT Pro";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
 }
-main section {
+nav a {
+  text-transform: uppercase;
+}
+
+#home {
+  margin-top: 140px;
+}
+#home section {
   padding: 70px 0;
   text-align: center;
   color: #777;

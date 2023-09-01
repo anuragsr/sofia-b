@@ -3,8 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
+<!--    <link rel="stylesheet" href="css/bootstrap.min.css" />-->
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" /> -->
+<!--    <script src="https://cdn.tailwindcss.com"></script>-->
+    <link rel="stylesheet" href="css/output.css" />
     <link rel="stylesheet" href="css/style-home.css?v=1" />
 
     <title>Portfolio | Sofia B.</title>
@@ -24,33 +26,23 @@
       }
     </style>
   </head>
-  <body class="home">
-    <div class="preload"><img src="img/loader.svg" height="50" alt="" /></div>
-    
-    <header>
-      <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container">
-          <a href="javascript:void(0)" class="navbar-brand">
-            <img src="img/og.png" alt="">
-            <div class="ctn-heading">
-              <div class="title">grunt-starter-v2</div>
-              <div class="sub-title">Anurag Srivastava F</div>
-            </div>
-          </a>
-        </div>
-      </nav>
-    </header>
+  <body>
+    <?php include 'partials/header.php'; ?>
 
-    <main>
+    <main id="home">
       <section class="section0">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <?php echo "Hello F"; ?>
-              <h1>This is a Grunt Starter Pack</h1>
-              <h4>Includes jQuery, Bootstrap 4, Webfont Loader</h4>
-            </div>
-          </div>
+        <div class="container mx-auto">
+          <?php echo "Hello F"; ?>
+          <h1 class="text-3xl font-bold">This is a Grunt Starter Pack</h1>
+          <h4>Includes jQuery, Bootstrap 4, Webfont Loader</h4>
+        </div>
+      </section>
+      
+      <section class="section1">
+        <div class="container mx-auto">
+          <?php echo "Hello F"; ?>
+          <h1 class="text-3xl font-bold">This is a Grunt Starter Pack</h1>
+          <h4>Includes jQuery, Bootstrap 4, Webfont Loader</h4>
         </div>
       </section>
     </main>
