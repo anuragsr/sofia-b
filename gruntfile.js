@@ -3,8 +3,7 @@ module.exports = grunt => {
     connect: {
       server:{
         options: {  
-          open: true,
-          // hostname: "127.0.0.1",
+          // open: true,
           hostname: "0.0.0.0",
           port: 8080,
           livereload: 35729
@@ -30,9 +29,9 @@ module.exports = grunt => {
         options: { livereload: true }
       },
       sass: {
-        files: ["**/*.scss",  "!node_modules/*.*"],
+        files: ["**/*.sass", "!node_modules/*.*"],
         tasks: ["sass:dev"]
-      },      
+      },
       js: {
         files: ["**/*.js",  "!node_modules/*.*"],
         options: { livereload: true }
@@ -50,7 +49,7 @@ module.exports = grunt => {
     sass: {
       dev: {
         files: {   
-          "css/style-home.css": "scss/style-home.scss",
+          "css/style-home.css": "sass/style-home.sass",
         },
         options: {
           style: "expanded",

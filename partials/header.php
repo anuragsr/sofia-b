@@ -1,18 +1,19 @@
-<div class="preload"><img src="img/loader.svg" height="50" alt="" /></div>
+<style>
+  .preload{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1031;
+        background: #fff;
+    }
+</style>
 
-<!--<header>
-  <nav class="navbar navbar-expand-lg fixed-top">
-    <div class="container">
-      <a href="javascript:void(0)" class="navbar-brand">
-        <img src="img/og.png" alt="">
-        <div class="ctn-heading">
-          <div class="title">grunt-starter-v2</div>
-          <div class="sub-title">Anurag Srivastava F</div>
-        </div>
-      </a>
-    </div>
-  </nav>
-</header>-->
+<div class="preload"><img src="img/loader.svg" height="50" alt="" /></div>
 
 <header class="absolute w-full left-0 top-0 z-[1] mt-10 md:mt-14">
   <div class="container flex justify-between mx-auto px-4">

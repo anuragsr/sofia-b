@@ -3,13 +3,16 @@
   src: url("../fonts/HelveticaNeueLTProRoman.otf") format("opentype");
 }
 footer {
+  width: 100%;
+}
+
+footer {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 body {
-  overflow: hidden;
   font-family: "Helvetica Neue LT Pro";
   background: #333;
 }
@@ -35,7 +38,6 @@ section {
 }
 
 nav {
-  font-family: "Helvetica Neue LT Pro";
   font-size: 18px;
   font-weight: 400;
   line-height: 22px;
@@ -44,19 +46,15 @@ nav a {
   text-transform: uppercase;
 }
 
-#home {
-  margin-top: 140px;
-}
 #home section {
-  padding: 70px 0;
+  padding: 10vh 0;
   text-align: center;
-  color: #777;
+  color: #7b0;
 }
 
 footer {
   height: 60px;
-  width: 100%;
-  background: #0ef;
+  background: #0e0;
 }
 
 /*# sourceMappingURL=style-home.css.map */

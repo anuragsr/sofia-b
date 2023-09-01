@@ -1,0 +1,23 @@
+@import './fonts'
+@import './vars'
+@import './include-media'
+
+body
+  //overflow: hidden
+  font-family: $hel
+  //background: #F3F3F3
+  background: #333
+
+.mobile-only
+  @include media('>mob')
+    display: none
+
+.desktop-only
+  @include media('<=mob')
+    display: none
+
+input:focus
+  outline: none
+
+section
+  height: 100vh
