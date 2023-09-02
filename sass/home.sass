@@ -4,3 +4,30 @@
     padding: 10vh 0
     text-align: center
     color: #7b0
+    &#section0
+      .grid
+        &>div
+          display: flex
+          align-items: center
+          justify-content: center
+          //outline: 1px solid green
+          img
+            margin: 0 auto
+          svg
+            circle
+              stroke: #000
+              stroke-width: .5
+              fill: none
+            path
+              fill: none
+              stroke: none
+              stroke-width: 15
+              &#path1
+                transform: translate(75px, 75px) rotate(185deg)
+              &#path2
+                transform: translate(75px, 75px) rotate(-25deg)
+            text
+              fill: #000
+              font-size: 12px
+              font-family: "Courier New"
+              letter-spacing: 1px

@@ -14,7 +14,7 @@ footer {
 
 body {
   font-family: "Helvetica Neue LT Pro";
-  background: #333;
+  background: #F3F3F3;
 }
 
 @media (min-width: 551px) {
@@ -50,6 +50,36 @@ nav a {
   padding: 10vh 0;
   text-align: center;
   color: #7b0;
+}
+#home section#section0 .grid > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#home section#section0 .grid > div img {
+  margin: 0 auto;
+}
+#home section#section0 .grid > div svg circle {
+  stroke: #000;
+  stroke-width: 0.5;
+  fill: none;
+}
+#home section#section0 .grid > div svg path {
+  fill: none;
+  stroke: none;
+  stroke-width: 15;
+}
+#home section#section0 .grid > div svg path#path1 {
+  transform: translate(75px, 75px) rotate(185deg);
+}
+#home section#section0 .grid > div svg path#path2 {
+  transform: translate(75px, 75px) rotate(-25deg);
+}
+#home section#section0 .grid > div svg text {
+  fill: #000;
+  font-size: 12px;
+  font-family: "Courier New";
+  letter-spacing: 1px;
 }
 
 footer {

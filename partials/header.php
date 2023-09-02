@@ -1,19 +1,19 @@
 <style>
   .preload{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-        width: 100vw;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 1031;
-        background: #fff;
-    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1031;
+    background: #fff;
+  }
 </style>
 
-<div class="preload"><img src="img/loader.svg" height="50" alt="" /></div>
+<!--<div class="preload"><img src="img/loader.svg" height="50" alt="" /></div>-->
 
 <header class="absolute w-full left-0 top-0 z-[1] mt-10 md:mt-14">
   <div class="container flex justify-between mx-auto px-4">

@@ -1,7 +1,7 @@
 const l = console.log.bind(window.console);
 
 $(() => {
-  setTimeout(()=>{
+  setTimeout(() => {
     l("Loaded")
     $(".preload").fadeOut()
   }, 500)
