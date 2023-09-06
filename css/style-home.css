@@ -49,12 +49,19 @@ nav a {
 #home section {
   padding: 10vh 0;
   text-align: center;
-  color: #7b0;
+  color: #fff;
 }
 #home section#section0 .grid > div {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+#home section#section0 .grid > div .hero-title {
+  background: #303030;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0em;
 }
 #home section#section0 .grid > div img {
   margin: 0 auto;
@@ -80,6 +87,34 @@ nav a {
   font-size: 12px;
   font-family: "Courier New";
   letter-spacing: 1px;
+}
+#home section#section1 {
+  height: unset;
+}
+#home section#section1 .carousel {
+  background: #303030;
+}
+#home section#section1 .carousel .ticker-wrapper {
+  /* the outer div */
+  position: relative;
+  width: 99.9%;
+  overflow: hidden;
+}
+#home section#section1 .carousel .ticker-wrapper ul.list {
+  position: relative;
+  display: inline-block;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#home section#section1 .carousel .ticker-wrapper ul.list.cloned {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+#home section#section1 .carousel .ticker-wrapper ul.list li {
+  float: left;
+  padding-left: 5px;
 }
 
 footer {

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Portfolio | Sofia B.</title>
+    <title>Portfolio | Sofia B. </title>
     
     <link rel="stylesheet" href="css/output.css" />
     <link rel="stylesheet" href="css/style-home.css?v=1" />
@@ -34,7 +34,7 @@
               <div class="col-span-2 row-span-1">
                 <img src="img/Mask group-3.png" alt="">
               </div>
-              <div>
+              <div id="svg1">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                      width="100%"
                      height="100%"
@@ -61,7 +61,13 @@
                 </svg>
               </div>
               <div class="col-span-2 row-span-1">
-                Web Design, Development & Email Marketing
+                <div class="hero-title
+                  h-full w-full flex flex-col
+                  justify-center align-center
+                  rounded-full
+                ">
+                  Web Design, Development<br/> & Email Marketing
+                </div>
               </div>
               <div>
                 <img src="img/Mask group-4.png" alt="">
@@ -81,7 +87,7 @@
               <div>
                 <img src="img/Mask group-9.png" alt="">
               </div>
-              <div>
+              <div id="svg2">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                      width="100%"
                      height="100%"
@@ -114,7 +120,20 @@
         </div>
       </section>
       
-      <section class="section1">
+      <section id="section1">
+        <div class="carousel p-12 px-0 text-3xl">
+          <div class="ticker-wrapper">
+            <ul class="list">
+              <li class="list-item"><span>&nbsp;DO IT YOURSELF //</span></li>
+              <li class="list-item"><span>&nbsp;DO IT YOURSELF //</span></li>
+              <li class="list-item"><span>&nbsp;DO IT YOURSELF //</span></li>
+              <li class="list-item"><span>&nbsp;DO IT YOURSELF //</span></li>
+              <li class="list-item"><span>&nbsp;DO IT YOURSELF //</span></li>
+              <li class="list-item"><span>&nbsp;DO IT YOURSELF //</span></li>
+              <li class="list-item"><span>&nbsp;DO IT YOURSELF //</span></li>
+            </ul>
+          </div>
+        </div>
         <div class="container mx-auto">
           <?php echo "Hello F"; ?>
           <h1 class="text-3xl font-bold">This is a Grunt Starter Pack</h1>
