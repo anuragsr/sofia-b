@@ -2,6 +2,10 @@
   font-family: "Helvetica Neue LT Pro";
   src: url("../fonts/HelveticaNeueLTProRoman.otf") format("opentype");
 }
+#home section#section0 .grid > div img {
+  height: 100%;
+}
+
 body {
   font-family: "Helvetica Neue LT Pro";
   background: #F3F3F3;
@@ -100,7 +104,6 @@ nav a {
 }
 #home section#section1 {
   height: unset;
-  padding-bottom: 0;
 }
 #home section#section1 .carousel {
   background: #303030;
@@ -127,17 +130,20 @@ nav a {
   float: left;
   padding-left: 5px;
 }
-#home section#section1 .content {
+#home section#section2 {
+  height: unset;
+}
+#home section#section2 .content {
   color: #302C2C;
 }
-#home section#section1 .content p {
+#home section#section2 .content p {
   font-family: "Courier New";
   font-size: 18px;
   font-weight: 400;
   line-height: 20px;
   letter-spacing: 0em;
 }
-#home section#section1 .content ul {
+#home section#section2 .content ul {
   font-family: "Courier New";
   font-size: 18px;
 }

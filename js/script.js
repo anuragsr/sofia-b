@@ -1,4 +1,8 @@
-const l = console.log.bind(window.console);
+const l = console.log.bind(window.console)
+  , getRandom = (min, max) =>
+    Math.floor(Math.random() * (max - min + 1)) + min
+
+gsap.registerPlugin(ScrollTrigger)
 
 $(() => {
   setTimeout(() => {
@@ -6,7 +10,34 @@ $(() => {
     $(".preload").fadeOut()
 
     new Home(document.querySelector(".carousel"))
+
+    const items = $("#section0 .grid > div")
+
+    gsap
+      .timeline()
+      .from(items, {
+        delay: 1,
+        opacity: 0,
+        x: "random(-50, 50, 5)",
+        y: "random(-50, 50, 5)",
+        scale: .9,
+        stagger: .05,
+        duration: .75
+      })
   }, 500)
+
+  let tl = gsap.timeline({
+    scrollTrigger: {
+      markers: false,
+      trigger: "#section2",
+      start: "-25% 50%",
+      toggleActions: "play none reverse reverse",
+    }
+  })
+
+  tl.addLabel("start")
+    .from("#section2 .border", {y: 50, opacity: 0, duration: .5, stagger: .25})
+    .from("footer", {opacity: 0, duration: .5})
 })
 
 class Home{

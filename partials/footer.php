@@ -1,4 +1,4 @@
-<footer>
+<footer class="relative">
   <div class="content container mx-auto p-12">
     <hr class="mb-12">
     <div class="flex flex-row h-full w-full items-stretch justify-center text-left">
@@ -6,7 +6,7 @@
         <h4 class="subtitle">
           SUBSCRIBE FOR MORE
         </h4>
-        <form action="#" class="mt-8 w-full mt-8 w-[75%] flex flex-row items-stretch justify-start">
+        <form action="#" class="mt-8 mt-8 w-[75%] flex flex-row items-stretch justify-start">
           <input type="email" placeholder="Enter email here" class="grow mr-4 form-input px-4 py-3 rounded-md">
           <button type="submit" class="px-4 py-3 rounded-md text-white bg-black hover:bg-gray-600">
             SUBMIT

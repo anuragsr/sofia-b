@@ -16,7 +16,7 @@
         <div class="container h-full mx-auto flex flex-col align-center justify-center">
           <div class="p-12 px-4 h-full w-full">
             <div class="
-              grid grid-cols-6 grid-rows-3
+              grid grid-cols-6 grid-rows-3 gap-2
               h-full w-full
             ">
               <div class="col-span-1 row-span-2">
@@ -127,7 +127,7 @@
       </section>
       
       <section id="section1">
-        <div class="carousel p-12 px-0 text-3xl">
+        <div class="carousel p-12 px-0 text-6xl">
           <div class="ticker-wrapper">
             <ul class="list">
               <li class="list-item"><span>&nbsp;DO IT YOURSELF //</span></li>
@@ -140,6 +140,9 @@
             </ul>
           </div>
         </div>
+      </section>
+      
+      <section id="section2">
         <div class="content container mx-auto p-12">
           <div class="flex flex-row h-full w-full items-stretch justify-center text-left">
             <div class="border border-y-0 border-l-0 basis-1/4">
@@ -176,12 +179,12 @@
                 <h1 class="text-4xl font-bold">$480</h1>
               </div>
               <div>
-                <button class="bg-black hover:bg-gray-600 text-white text-xl font-bold p-4 rounded-full">
+                <button class="bg-black hover:bg-gray-600 text-white text-xl font-bold p-4 px-8 rounded-full">
                   GET STARTED
                 </button>
               </div>
               <div>
-                <button class="bg-white hover:bg-gray-200 text-black text-xl font-bold p-4 rounded-full">
+                <button class="bg-white hover:bg-gray-200 text-black text-xl font-bold p-4 px-8 rounded-full">
                   LEARN MORE
                 </button>
               </div>
