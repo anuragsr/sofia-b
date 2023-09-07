@@ -1206,16 +1206,12 @@ select {
   width: 1.25rem;
 }
 
-.w-\[3\/4\] {
-  width: 3/4;
+.w-\[75\%\] {
+  width: 75%;
 }
 
 .w-full {
   width: 100%;
-}
-
-.w-\[75\%\] {
-  width: 75%;
 }
 
 .max-w-4xl {

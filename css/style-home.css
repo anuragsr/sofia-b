@@ -63,6 +63,19 @@ nav a {
 #home section#section0 .grid > div img {
   margin: 0 auto;
 }
+#home section#section0 .grid > div#svg1 a, #home section#section0 .grid > div#svg2 a {
+  display: block;
+  border-radius: 50%;
+  overflow: hidden;
+  transform: scale(0.95);
+}
+#home section#section0 .grid > div svg {
+  transform: rotate(0deg);
+  transition: transform 20s;
+}
+#home section#section0 .grid > div svg:hover {
+  transform: rotate(360deg);
+}
 #home section#section0 .grid > div svg circle {
   stroke: #000;
   stroke-width: 0.5;

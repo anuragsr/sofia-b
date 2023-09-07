@@ -35,30 +35,32 @@
                 <img src="img/Mask group-3.png" alt="">
               </div>
               <div id="svg1">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                     width="100%"
-                     height="100%"
-                     viewBox="0 0 150 150"
-                     preserveAspectRatio="xMidYMid meet"
-                >
-                  <circle cx="75" cy="75" r="70" />
-                  <g>
-                    <path id="path1" d="M 64,0 A 64,64 0 0 1 -64,0 A 64,64 0 0 1 64,0" />
-                    <text>
-                      <textPath xlink:href="#path1">
-                        <tspan dy="10">ABOUT SOFIA</tspan>
-                      </textPath>
-                    </text>
-                  </g>
-                  <g>
-                    <path id="path2" d="M 64,0 A 64,64 0 0 1 -64,0 A 64,64 0 0 1 64,0" />
-                    <text>
-                      <textPath xlink:href="#path2">
-                        <tspan dy="10">GET TO KNOW MORE</tspan>
-                      </textPath>
-                    </text>
-                  </g>
-                </svg>
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                       width="100%"
+                       height="100%"
+                       viewBox="0 0 150 150"
+                       preserveAspectRatio="xMidYMid meet"
+                  >
+                    <circle cx="75" cy="75" r="70" />
+                    <g>
+                      <path id="path1" d="M 64,0 A 64,64 0 0 1 -64,0 A 64,64 0 0 1 64,0" />
+                      <text>
+                        <textPath xlink:href="#path1">
+                          <tspan dy="10">ABOUT SOFIA</tspan>
+                        </textPath>
+                      </text>
+                    </g>
+                    <g>
+                      <path id="path2" d="M 64,0 A 64,64 0 0 1 -64,0 A 64,64 0 0 1 64,0" />
+                      <text>
+                        <textPath xlink:href="#path2">
+                          <tspan dy="10">GET TO KNOW MORE</tspan>
+                        </textPath>
+                      </text>
+                    </g>
+                  </svg>
+                </a>
               </div>
               <div class="col-span-2 row-span-1">
                 <div class="hero-title
@@ -88,32 +90,36 @@
                 <img src="img/Mask group-9.png" alt="">
               </div>
               <div id="svg2">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                      width="100%"
                      height="100%"
                      viewBox="0 0 150 150"
                      preserveAspectRatio="xMidYMid meet"
                 >
-                  <circle cx="75" cy="75" r="70" />
-                  <g>
-                    <path id="path1" d="M 64,0 A 64,64 0 0 1 -64,0 A 64,64 0 0 1 64,0"
-                          transform="translate(75, 75) rotate(185)" fill="none" stroke="none" stroke-width="15"/>
-                    <text>
-                      <textPath xlink:href="#path1">
-                        <tspan dy="10">WORK WITH ME</tspan>
-                      </textPath>
-                    </text>
-                  </g>
-                  <g>
-                    <path id="path2" d="M 64,0 A 64,64 0 0 1 -64,0 A 64,64 0 0 1 64,0"
-                          transform="translate(75, 75) rotate(-25)" fill="none" stroke="none" stroke-width="15"/>
-                    <text>
-                      <textPath xlink:href="#path2">
-                        <tspan dy="10">LET'S GET STARTED</tspan>
-                      </textPath>
-                    </text>
+                  <g transform="translate(5,5) scale(0.95)">
+                    <circle cx="75" cy="75" r="70" />
+                    <g>
+                      <path id="path1" d="M 64,0 A 64,64 0 0 1 -64,0 A 64,64 0 0 1 64,0"
+                            transform="translate(75, 75) rotate(185)" fill="none" stroke="none" stroke-width="15"/>
+                      <text>
+                        <textPath xlink:href="#path1">
+                          <tspan dy="10">WORK WITH ME</tspan>
+                        </textPath>
+                      </text>
+                    </g>
+                    <g>
+                      <path id="path2" d="M 64,0 A 64,64 0 0 1 -64,0 A 64,64 0 0 1 64,0"
+                            transform="translate(75, 75) rotate(-25)" fill="none" stroke="none" stroke-width="15"/>
+                      <text>
+                        <textPath xlink:href="#path2">
+                          <tspan dy="10">LET'S GET STARTED</tspan>
+                        </textPath>
+                      </text>
+                    </g>
                   </g>
                 </svg>
+                </a>
               </div>
             </div>
           </div>

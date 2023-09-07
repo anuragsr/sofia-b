@@ -20,7 +20,18 @@
             letter-spacing: 0em
           img
             margin: 0 auto
+          &#svg1 a,
+          &#svg2 a
+            display: block
+            border-radius: 50%
+            overflow: hidden
+            transform: scale(.95)
           svg
+            //outline: 1px solid salmon
+            transform: rotate(0deg)
+            transition: transform 20s
+            &:hover
+              transform: rotate(360deg)
             circle
               stroke: #000
               stroke-width: .5
@@ -38,6 +49,7 @@
               font-size: 12px
               font-family: "Courier New"
               letter-spacing: 1px
+
     &#section1
       height: unset
       padding-bottom: 0
