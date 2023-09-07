@@ -28,7 +28,7 @@ class Home{
     // el.querySelector('video').play()
 
     // Create and play ticker
-    let listWidth = 10
+    let listWidth = 0
     list.find("li").each(function (i) { listWidth += $(this, i).outerWidth(true) })
 
     const endPos = tickerWrapper.width() - listWidth
