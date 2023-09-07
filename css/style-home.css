@@ -2,16 +2,6 @@
   font-family: "Helvetica Neue LT Pro";
   src: url("../fonts/HelveticaNeueLTProRoman.otf") format("opentype");
 }
-footer {
-  width: 100%;
-}
-
-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 body {
   font-family: "Helvetica Neue LT Pro";
   background: #F3F3F3;
@@ -35,6 +25,13 @@ input:focus {
 
 section {
   height: 100vh;
+}
+
+.subtitle {
+  font-size: 27px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0em;
 }
 
 nav {
@@ -90,6 +87,7 @@ nav a {
 }
 #home section#section1 {
   height: unset;
+  padding-bottom: 0;
 }
 #home section#section1 .carousel {
   background: #303030;
@@ -119,12 +117,6 @@ nav a {
 #home section#section1 .content {
   color: #302C2C;
 }
-#home section#section1 .content .subtitle {
-  font-size: 27px;
-  font-weight: 400;
-  line-height: 32px;
-  letter-spacing: 0em;
-}
 #home section#section1 .content p {
   font-family: "Courier New";
   font-size: 18px;
@@ -132,17 +124,17 @@ nav a {
   line-height: 20px;
   letter-spacing: 0em;
 }
-#home section#section1 .content ul, #home section#section1 .content form {
+#home section#section1 .content ul {
   font-family: "Courier New";
   font-size: 18px;
 }
-#home section#section1 .content .links a {
-  font-family: "Courier New";
-}
 
-footer {
-  height: 60px;
-  background: #0e0;
+footer form {
+  font-family: "Courier New";
+  font-size: 18px;
+}
+footer .links a {
+  font-family: "Courier New";
 }
 
 /*# sourceMappingURL=style-home.css.map */
