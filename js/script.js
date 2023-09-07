@@ -18,7 +18,7 @@ class Home{
     this.infinite = gsap.timeline({ repeat: -1, paused: true })
 
     this.init()
-    // this.addEvents()
+    this.addEvents()
   }
   init(){
 

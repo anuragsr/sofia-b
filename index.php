@@ -134,10 +134,80 @@
             </ul>
           </div>
         </div>
-        <div class="container mx-auto">
-          <?php echo "Hello F"; ?>
-          <h1 class="text-3xl font-bold">This is a Grunt Starter Pack</h1>
-          <h4>Includes jQuery, Bootstrap 4, Webfont Loader</h4>
+        <div class="content container mx-auto p-12">
+          <div class="flex flex-row h-full w-full items-stretch justify-center text-left">
+            <div class="border border-y-0 border-l-0 basis-1/4">
+              <h4 class="subtitle">
+                BUILD YOUR OWN<br/> WEBSITE COURSE
+              </h4>
+              <p class="mt-8">
+                Looking to DIY your website to stay on a budget?
+                Or curious to learn and begin to dabble in the world of
+                web creation? This is the perfect quick and efficient
+                course for you where I guide you every step of
+                the way using one of the world’s easiest web builders.
+              </p>
+            </div>
+            <div class="border border-y-0 border-l-0 basis-1/2 px-8">
+              <h4 class="subtitle">
+                COURSE<br/> MODULES
+              </h4>
+              <div class="options mt-8">
+                <ul>
+                  <li>HOSTING, DOMAIN + SQUARESPACE SET UP</li>
+                  <li>DESIGN-CENTERED APPROACH TO WEB BUILDING</li>
+                  <li>HOW TO PLAN AND CREATE THE CONTENT FOR YOUR WEBSITE</li>
+                  <li>BUILDING YOUR WEBSITE: FOUR MAIN TEMPLATES</li>
+                  <li>HOW TO LAUNCH YOUR WEBSITE</li>
+                </ul>
+                <p class="mt-8">
+                  All of the above is included in your course & more!
+                </p>
+              </div>
+            </div>
+            <div class="border border-0 basis-1/4 flex flex-col items-center justify-between">
+              <div>
+                <h1 class="text-4xl font-bold">$480</h1>
+              </div>
+              <div>
+                <button class="bg-black hover:bg-gray-600 text-white text-xl font-bold p-4 rounded-full">
+                  GET STARTED
+                </button>
+              </div>
+              <div>
+                <button class="bg-white hover:bg-gray-200 text-black text-xl font-bold p-4 rounded-full">
+                  LEARN MORE
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content container mx-auto p-12">
+          <hr class="mb-12">
+          <div class="flex flex-row h-full w-full items-stretch justify-center text-left">
+            <div class="border border-y-0 border-l-0 basis-1/2">
+              <h4 class="subtitle">
+                SUBSCRIBE FOR MORE
+              </h4>
+              <form action="#" class="mt-8 w-full mt-8 w-[3/4] flex flex-row items-stretch justify-start">
+                <input type="email" placeholder="Enter email here" class="grow mr-4 form-input px-4 py-3 rounded-md">
+                <button type="submit" class="px-4 py-3 rounded-md text-white bg-black hover:bg-gray-600">
+                  SUBMIT
+                </button>
+              </form>
+            </div>
+            <div class="links basis-1/2 grid grid-cols-1 gap-2 text-right">
+              <div>
+                <a href="#">VIEW PORTFOLIO</a>
+              </div>
+              <div>
+                <a href="#">GET IN TOUCH</a>
+              </div>
+              <div>
+                <a href="#" class="text-[#7C7C7C]">SOFIA BORGES LLC</a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>

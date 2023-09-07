@@ -116,6 +116,29 @@ nav a {
   float: left;
   padding-left: 5px;
 }
+#home section#section1 .content {
+  color: #302C2C;
+}
+#home section#section1 .content .subtitle {
+  font-size: 27px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0em;
+}
+#home section#section1 .content p {
+  font-family: "Courier New";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+}
+#home section#section1 .content ul, #home section#section1 .content form {
+  font-family: "Courier New";
+  font-size: 18px;
+}
+#home section#section1 .content .links a {
+  font-family: "Courier New";
+}
 
 footer {
   height: 60px;
