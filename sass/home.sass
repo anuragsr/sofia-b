@@ -5,6 +5,8 @@
     text-align: center
     color: $w
     &#section0
+      height: unset
+      padding-bottom: 0
       .grid
         &>div
           display: flex
@@ -12,21 +14,19 @@
           justify-content: center
           //outline: 1px solid green
           .hero-title
-            //font-family: "Helvetica Neue LT Pro"
             background: #303030
             font-size: 24px
             font-weight: 400
             line-height: 29px
             letter-spacing: 0em
           img
-            @extend %fh
+            @extend %fhw
             margin: 0 auto
           &#svg1 a,
           &#svg2 a
             display: block
             border-radius: 50%
             overflow: hidden
-            transform: scale(.95)
           svg
             //outline: 1px solid salmon
             transform: rotate(0deg)
@@ -51,8 +51,10 @@
               font-family: "Courier New"
               letter-spacing: 1px
 
+
     &#section1
       height: unset
+      padding-bottom: 0
       .carousel
         background: #303030
         .ticker-wrapper
@@ -71,8 +73,11 @@
             li
               float: left
               padding-left: 5px
+
+
     &#section2
       height: unset
+      padding: 0
       .content
         color: #302C2C
         p

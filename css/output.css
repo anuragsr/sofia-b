@@ -1214,6 +1214,14 @@ select {
   width: 100%;
 }
 
+.w-\[30vw\] {
+  width: 30vw;
+}
+
+.w-\[40vw\] {
+  width: 40vw;
+}
+
 .max-w-4xl {
   max-width: 56rem;
 }
@@ -1276,6 +1284,18 @@ select {
 
 .border-separate {
   border-collapse: separate;
+}
+
+.scale-90 {
+  --tw-scale-x: .9;
+  --tw-scale-y: .9;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.scale-95 {
+  --tw-scale-x: .95;
+  --tw-scale-y: .95;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .\!transform {

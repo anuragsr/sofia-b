@@ -4,6 +4,7 @@
 }
 #home section#section0 .grid > div img {
   height: 100%;
+  width: 100%;
 }
 
 body {
@@ -52,6 +53,10 @@ nav a {
   text-align: center;
   color: #fff;
 }
+#home section#section0 {
+  height: unset;
+  padding-bottom: 0;
+}
 #home section#section0 .grid > div {
   display: flex;
   align-items: center;
@@ -71,7 +76,6 @@ nav a {
   display: block;
   border-radius: 50%;
   overflow: hidden;
-  transform: scale(0.95);
 }
 #home section#section0 .grid > div svg {
   transform: rotate(0deg);
@@ -104,6 +108,7 @@ nav a {
 }
 #home section#section1 {
   height: unset;
+  padding-bottom: 0;
 }
 #home section#section1 .carousel {
   background: #303030;
@@ -132,6 +137,7 @@ nav a {
 }
 #home section#section2 {
   height: unset;
+  padding: 0;
 }
 #home section#section2 .content {
   color: #302C2C;

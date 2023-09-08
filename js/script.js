@@ -1,44 +1,34 @@
 const l = console.log.bind(window.console)
   , getRandom = (min, max) =>
     Math.floor(Math.random() * (max - min + 1)) + min
+  , startHomeAnim = () => {
+      const items = $("#section0 .grid > div")
 
-gsap.registerPlugin(ScrollTrigger)
+      gsap
+        .timeline()
+        .from(items, {
+          delay: 1,
+          opacity: 0,
+          x: "random(-50, 50, 5)",
+          y: "random(-50, 50, 5)",
+          scale: .9,
+          stagger: .05,
+          duration: .75
+        })
 
-$(() => {
-  setTimeout(() => {
-    l("Loaded")
-    $(".preload").fadeOut()
+    let tl = gsap.timeline({
+      scrollTrigger: {
+        markers: !false,
+        trigger: "#section2",
+        start: "-25% 50%",
+        toggleActions: "play none reverse reverse",
+      }
+    })
 
-    new Home(document.querySelector(".carousel"))
-
-    const items = $("#section0 .grid > div")
-
-    gsap
-      .timeline()
-      .from(items, {
-        delay: 1,
-        opacity: 0,
-        x: "random(-50, 50, 5)",
-        y: "random(-50, 50, 5)",
-        scale: .9,
-        stagger: .05,
-        duration: .75
-      })
-  }, 500)
-
-  let tl = gsap.timeline({
-    scrollTrigger: {
-      markers: false,
-      trigger: "#section2",
-      start: "-25% 50%",
-      toggleActions: "play none reverse reverse",
-    }
-  })
-
-  tl.addLabel("start")
-    .from("#section2 .border", {y: 50, opacity: 0, duration: .5, stagger: .25})
-    .from("footer", {opacity: 0, duration: .5})
-})
+    tl.addLabel("start")
+      .from("#section2 .border", {y: 50, opacity: 0, duration: .5, stagger: .25})
+      .from("footer", {opacity: 0, duration: .5})
+  }
 
 class Home{
   constructor(el){
@@ -49,7 +39,7 @@ class Home{
     this.infinite = gsap.timeline({ repeat: -1, paused: true })
 
     this.init()
-    this.addEvents()
+    // this.addEvents()
   }
   init(){
 
@@ -82,4 +72,16 @@ class Home{
       .on("mouseleave", () => { this.infinite.play(); })
   }
 }
+
+$(() => {
+  setTimeout(() => {
+    l("Loaded")
+    $(".preload").fadeOut()
+
+    new Home(document.querySelector(".carousel"))
+
+    // startHomeAnim()
+  }, 500)
+})
+
 

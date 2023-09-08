@@ -14,9 +14,9 @@
     <main id="home">
       <section id="section0">
         <div class="container h-full mx-auto flex flex-col align-center justify-center">
-          <div class="p-12 px-4 h-full w-full">
+          <div class="p-12 px-4 h-full w-full scale-95">
             <div class="
-              grid grid-cols-6 grid-rows-3 gap-2
+              grid grid-cols-6 grid-rows-3
               h-full w-full
             ">
               <div class="col-span-1 row-span-2">
@@ -42,7 +42,7 @@
                        viewBox="0 0 150 150"
                        preserveAspectRatio="xMidYMid meet"
                   >
-                    <circle cx="75" cy="75" r="70" />
+                    <circle cx="75" cy="75" r="74" />
                     <g>
                       <path id="path1" d="M 64,0 A 64,64 0 0 1 -64,0 A 64,64 0 0 1 64,0" />
                       <text>
@@ -96,9 +96,8 @@
                      height="100%"
                      viewBox="0 0 150 150"
                      preserveAspectRatio="xMidYMid meet"
-                >
-                  <g transform="translate(5,5) scale(0.95)">
-                    <circle cx="75" cy="75" r="70" />
+                  >
+                    <circle cx="75" cy="75" r="74" />
                     <g>
                       <path id="path1" d="M 64,0 A 64,64 0 0 1 -64,0 A 64,64 0 0 1 64,0"
                             transform="translate(75, 75) rotate(185)" fill="none" stroke="none" stroke-width="15"/>
@@ -117,8 +116,7 @@
                         </textPath>
                       </text>
                     </g>
-                  </g>
-                </svg>
+                  </svg>
                 </a>
               </div>
             </div>
@@ -150,6 +148,7 @@
                 BUILD YOUR OWN<br/> WEBSITE COURSE
               </h4>
               <p class="mt-8">
+                
                 Looking to DIY your website to stay on a budget?
                 Or curious to learn and begin to dabble in the world of
                 web creation? This is the perfect quick and efficient
