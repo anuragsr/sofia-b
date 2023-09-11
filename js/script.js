@@ -4,8 +4,7 @@ const l = console.log.bind(window.console)
   , startHomeAnim = () => {
       const items = $("#section0 .grid > div")
 
-      gsap
-        .timeline()
+      gsap.timeline()
         .from(items, {
           delay: 1,
           opacity: 0,
@@ -16,7 +15,7 @@ const l = console.log.bind(window.console)
           duration: .75
         })
 
-    let tl = gsap.timeline({
+    gsap.timeline({
       scrollTrigger: {
         markers: !false,
         trigger: "#section2",
@@ -24,10 +23,8 @@ const l = console.log.bind(window.console)
         toggleActions: "play none reverse reverse",
       }
     })
-
-    tl.addLabel("start")
-      .from("#section2 .border", {y: 50, opacity: 0, duration: .5, stagger: .25})
-      .from("footer", {opacity: 0, duration: .5})
+    .from("#section2 .border", {y: 50, opacity: 0, duration: .5, stagger: .25})
+    .from("footer", {opacity: 0, duration: .5})
   }
 
 class Home{
@@ -80,7 +77,7 @@ $(() => {
 
     new Home(document.querySelector(".carousel"))
 
-    // startHomeAnim()
+    startHomeAnim()
   }, 500)
 })
 
