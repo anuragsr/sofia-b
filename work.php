@@ -12,6 +12,12 @@
            Work page
           </div>
         </section>
+        
+        <section id="section1">
+          <div class="container h-full mx-auto flex flex-col align-center justify-center">
+           Work page
+          </div>
+        </section>
       </main>
     </div>
     

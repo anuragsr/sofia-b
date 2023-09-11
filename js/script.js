@@ -5,7 +5,7 @@ const l = console.log.bind(window.console)
   , loadingScreen = document.querySelector('.loading-screen')
   // Function to add the page transition screen
   , pageTransitionIn = () => {
-    return gsap.to(loadingScreen, { duration: .5, yPercent: -10 })
+    return gsap.to(loadingScreen, { duration: .5, yPercent: 15 })
   }
   // Function to remove the page transition screen
   , pageTransitionOut = next => {
@@ -14,11 +14,12 @@ const l = console.log.bind(window.console)
 
     // GSAP methods can be chained and return directly a promise
     return gsap
-      .timeline({ delay: 1 })
+      .timeline({ delay: .5 })
       .add('start')
       .to(loadingScreen, {
         duration: .75,
-        yPercent: -110,
+        yPercent: 100,
+        // opacity: 0,
         ease: 'power1.out',
         onComplete:() => {
           $("body").removeClass("loading")

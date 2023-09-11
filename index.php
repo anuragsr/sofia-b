@@ -11,9 +11,9 @@
           <div class="container h-full mx-auto flex flex-col align-center justify-center">
             <div class="p-12 px-4 h-full w-full scale-95">
               <div class="
-              grid grid-cols-6 grid-rows-3
-              h-full w-full
-            ">
+                grid grid-cols-6 grid-rows-3
+                h-full w-full
+              ">
                 <div class="col-span-1 row-span-2">
                   <img src="img/Mask group.png" alt="">
                 </div>

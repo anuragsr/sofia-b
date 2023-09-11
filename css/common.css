@@ -2,6 +2,11 @@
   font-family: "Helvetica Neue LT Pro";
   src: url("../fonts/HelveticaNeueLTProRoman.otf") format("opentype");
 }
+.loading-container .loading-screen {
+  height: 100%;
+  width: 100%;
+}
+
 body {
   font-family: "Helvetica Neue LT Pro";
   background: #F3F3F3;
@@ -36,11 +41,6 @@ input:focus {
 .loading-container .loading-screen {
   position: relative;
   background-color: #333;
-  width: 150%;
-  height: 150%;
-  left: -20%;
-  top: -20%;
-  transform: rotateZ(-8deg);
 }
 
 section {
