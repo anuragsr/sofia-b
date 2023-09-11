@@ -1,4 +1,4 @@
-<style>
+<!--<style>
   .preload{
     display: flex;
     align-items: center;
@@ -11,13 +11,16 @@
     z-index: 1031;
     background: #fff;
   }
-</style>
+</style>-->
 
 <!--<div class="preload"><img src="img/loader.svg" height="50" alt="" /></div>-->
+<div class="loading-container">
+  <div class="loading-screen"></div>
+</div>
 
 <header class="absolute w-full left-0 top-0 z-[1] mt-10 md:mt-14">
   <div class="container flex justify-between mx-auto px-4">
-    <a href="#" title="Home">
+    <a href="./" title="Home">
       <img src="img/Artboard 78@2x.png" alt=""/>
     </a>
     <div>
@@ -36,7 +39,7 @@
           <div class="hidden w-full md:block" id="navbar-default">
             <ul class="font-medium flex flex-col justify-around p-4 md:p-0 mt-4 md:flex-row md:space-x-8 md:mt-0 md:border-0">
               <li>
-                <a href="#">
+                <a href="./work.php">
                   Work
                 </a>
               </li>

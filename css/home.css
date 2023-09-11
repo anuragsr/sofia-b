@@ -1,51 +1,6 @@
-@font-face {
-  font-family: "Helvetica Neue LT Pro";
-  src: url("../fonts/HelveticaNeueLTProRoman.otf") format("opentype");
-}
 #home section#section0 .grid > div img {
   height: 100%;
   width: 100%;
-}
-
-body {
-  font-family: "Helvetica Neue LT Pro";
-  background: #F3F3F3;
-}
-
-@media (min-width: 551px) {
-  .mobile-only {
-    display: none;
-  }
-}
-
-@media (max-width: 550px) {
-  .desktop-only {
-    display: none;
-  }
-}
-
-input:focus {
-  outline: none;
-}
-
-section {
-  height: 100vh;
-}
-
-.subtitle {
-  font-size: 27px;
-  font-weight: 400;
-  line-height: 32px;
-  letter-spacing: 0em;
-}
-
-nav {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 22px;
-}
-nav a {
-  text-transform: uppercase;
 }
 
 #home section {
@@ -154,12 +109,4 @@ nav a {
   font-size: 18px;
 }
 
-footer form {
-  font-family: "Courier New";
-  font-size: 18px;
-}
-footer .links a {
-  font-family: "Courier New";
-}
-
-/*# sourceMappingURL=style-home.css.map */
+/*# sourceMappingURL=home.css.map */
