@@ -17,14 +17,24 @@ const l = console.log.bind(window.console)
       .timeline({ delay: .5 })
       .add('start')
       .to(loadingScreen, {
-        duration: .75,
-        yPercent: 100,
-        // opacity: 0,
-        ease: 'power1.out',
+        duration: .25,
+        // yPercent: 100,
+        opacity: 0,
+        // ease: 'power1.out',
         onComplete:() => {
           $("body").removeClass("loading")
+          gsap.set(loadingScreen, { yPercent: 100, opacity: 1 })
         }
       }, 'start')
+      // .from("#work", {
+      //   duration: .5,
+      //   yPercent: 100,
+      //   // opacity: 0,
+      //   // ease: 'power1.out',
+      //   // onComplete:() => {
+      //   //   $("body").removeClass("loading")
+      //   // }
+      // }, 'start')
       .call(contentAnimation, [next], 'start')
   }
   // Function to animate the content of each page
@@ -40,15 +50,71 @@ const l = console.log.bind(window.console)
     switch(namespace){
       case 'work':
         l("work")
+        gsap
+          .timeline({
+            // delay: .5
+          })
+          .add('start')
+          .from("#work", {
+            duration: .25,
+            yPercent: 20,
+            opacity: 0,
+            // ease: 'power1.out',
+            // onComplete:() => {
+            //   $("body").removeClass("loading")
+            // }
+          }, 'start')
         break;
 
       case 'about':
+        gsap
+          .timeline({
+            // delay: .5
+          })
+          .add('start')
+          .from("#about", {
+            duration: .25,
+            yPercent: 20,
+            opacity: 0,
+            // ease: 'power1.out',
+            // onComplete:() => {
+            //   $("body").removeClass("loading")
+            // }
+          }, 'start')
         break;
 
       case 'hire':
+        gsap
+          .timeline({
+            // delay: .5
+          })
+          .add('start')
+          .from("#hire", {
+            duration: .25,
+            yPercent: 20,
+            opacity: 0,
+            // ease: 'power1.out',
+            // onComplete:() => {
+            //   $("body").removeClass("loading")
+            // }
+          }, 'start')
         break;
 
       case 'course':
+        gsap
+          .timeline({
+            // delay: .5
+          })
+          .add('start')
+          .from("#course", {
+            duration: .25,
+            yPercent: 20,
+            opacity: 0,
+            // ease: 'power1.out',
+            // onComplete:() => {
+            //   $("body").removeClass("loading")
+            // }
+          }, 'start')
         break;
 
       default: // home
