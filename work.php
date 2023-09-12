@@ -9,13 +9,8 @@
       <main id="work" data-barba="container" data-barba-namespace="work">
         <section id="section0">
           <div class="container h-full mx-auto flex flex-col align-center justify-center">
-           Work page
-          </div>
-        </section>
-        
-        <section id="section1">
-          <div class="container h-full mx-auto flex flex-col align-center justify-center">
-           Work page
+            <h1 class="text-6xl font-bold mb-12">WORK PAGE</h1>
+            <img src="img/WIP.jpg" class="rounded-lg shadow-lg" alt="">
           </div>
         </section>
       </main>

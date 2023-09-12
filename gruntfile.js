@@ -49,13 +49,14 @@ module.exports = grunt => {
     sass: {
       dev: {
         files: {
-          "css/common.css"  : "sass/common.sass",
-          "css/header.css"  : "sass/header.sass",
-          "css/home.css"    : "sass/home.sass",
-          "css/work.css"    : "sass/work.sass",
-          // "css/contact.css" : "scss/contact.scss",
-          // "css/legal.css"   : "scss/legal.scss",
-          "css/footer.css"  : "sass/footer.sass",
+          "css/common.css"   : "sass/common.sass",
+          "css/header.css"   : "sass/header.sass",
+          "css/home.css"     : "sass/home.sass",
+          "css/work.css"     : "sass/work.sass",
+          "css/about.css"    : "sass/about.sass",
+          "css/course.css"   : "sass/course.sass",
+          "css/hire.css"     : "sass/hire.sass",
+          "css/footer.css"   : "sass/footer.sass",
         },
         options: {
           style: "expanded",

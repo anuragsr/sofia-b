@@ -1,14 +1,14 @@
-#work section {
+#hire section {
   padding: 10vh 0;
   text-align: center;
   color: #000;
 }
-#work section#section0 {
+#hire section#section0 {
   padding-top: 20vh;
   height: unset;
 }
-#work section#section0 h1 {
+#hire section#section0 h1 {
   font-family: "Courier New";
 }
 
-/*# sourceMappingURL=work.css.map */
+/*# sourceMappingURL=hire.css.map */

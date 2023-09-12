@@ -44,17 +44,17 @@
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="./about.php">
                   About
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="./course.php">
                   Course
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="./hire.php">
                   Hire
                 </a>
               </li>
