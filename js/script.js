@@ -12,7 +12,6 @@ const l = console.log.bind(window.console)
 
     $("body").addClass("loading")
 
-    // GSAP methods can be chained and return directly a promise
     return gsap
       .timeline({ delay: .5 })
       .add('start')
@@ -26,22 +25,18 @@ const l = console.log.bind(window.console)
           gsap.set(loadingScreen, { yPercent: 100, opacity: 1 })
         }
       }, 'start')
-      // .from("#work", {
-      //   duration: .5,
-      //   yPercent: 100,
-      //   // opacity: 0,
-      //   // ease: 'power1.out',
-      //   // onComplete:() => {
-      //   //   $("body").removeClass("loading")
-      //   // }
-      // }, 'start')
       .call(contentAnimation, [next], 'start')
   }
   // Function to animate the content of each page
   , contentAnimation = next => {
-    // l(next)
     const { container, namespace } = next
       , body = $('body')
+      , tl = gsap.timeline().add("start")
+      , enterParams = {
+        duration: .25,
+        yPercent: 10,
+        opacity: 0,
+      }
 
     body
       .removeClass('work about course hire')
@@ -49,72 +44,10 @@ const l = console.log.bind(window.console)
 
     switch(namespace){
       case 'work':
-        l("work")
-        gsap
-          .timeline({
-            // delay: .5
-          })
-          .add('start')
-          .from("#work", {
-            duration: .25,
-            yPercent: 20,
-            opacity: 0,
-            // ease: 'power1.out',
-            // onComplete:() => {
-            //   $("body").removeClass("loading")
-            // }
-          }, 'start')
-        break;
-
       case 'about':
-        gsap
-          .timeline({
-            // delay: .5
-          })
-          .add('start')
-          .from("#about", {
-            duration: .25,
-            yPercent: 20,
-            opacity: 0,
-            // ease: 'power1.out',
-            // onComplete:() => {
-            //   $("body").removeClass("loading")
-            // }
-          }, 'start')
-        break;
-
       case 'hire':
-        gsap
-          .timeline({
-            // delay: .5
-          })
-          .add('start')
-          .from("#hire", {
-            duration: .25,
-            yPercent: 20,
-            opacity: 0,
-            // ease: 'power1.out',
-            // onComplete:() => {
-            //   $("body").removeClass("loading")
-            // }
-          }, 'start')
-        break;
-
       case 'course':
-        gsap
-          .timeline({
-            // delay: .5
-          })
-          .add('start')
-          .from("#course", {
-            duration: .25,
-            yPercent: 20,
-            opacity: 0,
-            // ease: 'power1.out',
-            // onComplete:() => {
-            //   $("body").removeClass("loading")
-            // }
-          }, 'start')
+        tl.from(`#${namespace}`, enterParams, "start")
         break;
 
       default: // home
