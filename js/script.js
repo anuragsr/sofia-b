@@ -71,15 +71,23 @@ class Home{
     this.infinite = gsap.timeline({ repeat: -1, paused: true })
 
     this.init()
-    // this.addEvents()
   }
   init(){
-    const time = 50,
-      { tickerWrapper, list, clonedList, infinite, el, heroImages } = this
+    // // Hero images animation
+    // this.heroImagesTl()
 
-    // Hero images animation
+    // Ticker animation
+    this.tickerTl()
+
+    // Scroll animation
+    this.scrollTl()
+
+    // Events
+    // this.addEvents()
+  }
+  heroImagesTl(){
     gsap.timeline()
-    .from(heroImages, {
+      .from(this.heroImages, {
         delay: 1,
         opacity: 0,
         x: "random(-50, 50, 5)",
@@ -88,12 +96,27 @@ class Home{
         stagger: .05,
         duration: .75
       })
-
-    // Ticker animation
+  }
+  scrollTl(){
+    gsap.timeline({
+      scrollTrigger: {
+        markers: !false,
+        trigger: "#section2",
+        start: "-25% 50%",
+        toggleActions: "play none reverse reverse",
+      }
+    })
+    .from("#section2 .border", {y: 50, opacity: 0, duration: .5, stagger: .25})
+    .from("footer", {opacity: 0, duration: .5})
+  }
+  tickerTl(){
+    const time = 50,
+      { tickerWrapper, list, clonedList, infinite } = this
     let listWidth = 0
+
     list.find("li").each(function (i) { listWidth += $(this, i).outerWidth(true) })
 
-    const endPos = tickerWrapper.width() - listWidth
+    // const endPos = tickerWrapper.width() - listWidth
     list.add(clonedList).css({ "width": listWidth + "px" })
     clonedList.addClass("cloned").appendTo(tickerWrapper)
 
@@ -105,18 +128,6 @@ class Home{
       .to(list, time, { force3D: true, rotation: 0.01, x: 0, ease: Linear.easeNone }, time)
       .progress(1).progress(0)
       .play()
-
-    // Scroll animation
-    gsap.timeline({
-      scrollTrigger: {
-        markers: !false,
-        trigger: "#section2",
-        start: "-25% 50%",
-        toggleActions: "play none reverse reverse",
-      }
-    })
-    .from("#section2 .border", {y: 50, opacity: 0, duration: .5, stagger: .25})
-    .from("footer", {opacity: 0, duration: .5})
   }
   addEvents(){
     // Pause / Play
