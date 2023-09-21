@@ -14,8 +14,48 @@
                 grid grid-cols-6 grid-rows-3
                 h-full w-full
               ">
-                <div class="col-span-1 row-span-2">
+                <!--<div class="col-span-1 row-span-2">
                   <img src="img/Mask group.png" alt="">
+                </div>-->
+                <div class="col-span-1 row-span-2">
+                  <div class="outer h-full w-full">
+                    <svg
+                      class="border border-black"
+                      width="100%"
+                      height="100%"
+                      viewBox="0 0 150 150"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g transform="translate(0, -13)">
+                        <path
+                          id="MyPath"
+                          d="M 10 175
+                             L 10 0
+                             M 10 7.960204194457796e-15
+                             A 65 65 0 1 1 140 0
+                             L 140 175
+                             M 140 175
+                             A 65 65 0 1 1 10 175
+                             "
+                          stroke="black"
+                          fill="none"
+                          stroke-width="1" />
+                        <text class="motion-text">
+                          Quick brown 
+                        </text>
+                        <!--<text class="motion-text">
+                          <textPath href="#MyPath" startOffset="0%">
+                            <animate attributeName="startOffset" from="0%" to="-100%" begin="0s" dur="5s" repeatCount="indefinite"></animate>
+                            Quick brown fox jumps over the lazy dog.
+                            Quick brown fox jumps over the lazy dog.
+                            Quick brown fox.
+                          </textPath>
+                        </text>-->
+                      </g>
+
+                    </svg>
+                  </div>
+<!--                  <img src="img/Mask group.png" alt="">-->
                 </div>
                 <div>
                   <img src="img/Mask group-0.png" alt="">
@@ -32,6 +72,7 @@
                 <div id="svg1">
                   <a href="#">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                         class="grid-item"
                          width="100%"
                          height="100%"
                          viewBox="0 0 150 150"
@@ -87,6 +128,7 @@
                 <div id="svg2">
                   <a href="#">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                         class="grid-item"
                          width="100%"
                          height="100%"
                          viewBox="0 0 150 150"

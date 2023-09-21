@@ -53,9 +53,22 @@ const l = console.log.bind(window.console)
       default: // home
         // Home animation
         new Home(container)
+
+        gsap.to(".motion-text", {
+          motionPath: {
+            path: "#MyPath",
+            align: "#MyPath",
+            alignOrigin: [0.5, 0.5],
+            autoRotate: true
+          },
+          duration: 5,
+          ease: "power1.inOut"
+        });
         break;
     }
   }
+
+  gsap.registerPlugin()
 
 // Home Animations Class
 class Home{

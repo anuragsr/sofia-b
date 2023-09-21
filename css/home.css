@@ -32,30 +32,30 @@
   border-radius: 50%;
   overflow: hidden;
 }
-#home section#section0 .grid > div svg {
+#home section#section0 .grid > div svg.grid-item {
   transform: rotate(0deg);
   transition: transform 20s;
 }
-#home section#section0 .grid > div svg:hover {
+#home section#section0 .grid > div svg.grid-item:hover {
   transform: rotate(360deg);
 }
-#home section#section0 .grid > div svg circle {
+#home section#section0 .grid > div svg.grid-item circle {
   stroke: #000;
   stroke-width: 0.5;
   fill: none;
 }
-#home section#section0 .grid > div svg path {
+#home section#section0 .grid > div svg.grid-item path {
   fill: none;
   stroke: none;
   stroke-width: 15;
 }
-#home section#section0 .grid > div svg path#path1 {
+#home section#section0 .grid > div svg.grid-item path#path1 {
   transform: translate(75px, 75px) rotate(185deg);
 }
-#home section#section0 .grid > div svg path#path2 {
+#home section#section0 .grid > div svg.grid-item path#path2 {
   transform: translate(75px, 75px) rotate(-25deg);
 }
-#home section#section0 .grid > div svg text {
+#home section#section0 .grid > div svg.grid-item text {
   fill: #000;
   font-size: 12px;
   font-family: "Courier New";
