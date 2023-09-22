@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-  <?php include 'partials/styles.php'; ?>
+  <?php include 'partials/head.php'; ?>
   
   <body>
     <?php include 'partials/header.php'; ?>
@@ -37,13 +37,10 @@
                              M 140 175
                              A 65 65 0 1 1 10 175
                              "
-                          stroke="black"
+                          stroke="none"
                           fill="none"
                           stroke-width="1" />
-                        <text class="motion-text">
-                          Quick brown 
-                        </text>
-                        <!--<text class="motion-text">
+                        <!--<text>
                           <textPath href="#MyPath" startOffset="0%">
                             <animate attributeName="startOffset" from="0%" to="-100%" begin="0s" dur="5s" repeatCount="indefinite"></animate>
                             Quick brown fox jumps over the lazy dog.
@@ -55,7 +52,8 @@
 
                     </svg>
                   </div>
-<!--                  <img src="img/Mask group.png" alt="">-->
+                  <div class="motion-text text-black">Anurag Anurag</div>
+                  <!--<img src="img/Mask group.png" alt="">-->
                 </div>
                 <div>
                   <img src="img/Mask group-0.png" alt="">

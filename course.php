@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<?php include 'partials/styles.php'; ?>
+<?php include 'partials/head.php'; ?>
 
 <body>
 <?php include 'partials/header.php'; ?>

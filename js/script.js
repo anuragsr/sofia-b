@@ -31,7 +31,7 @@ const l = console.log.bind(window.console)
   , contentAnimation = next => {
     const { container, namespace } = next
       , body = $('body')
-      , tl = gsap.timeline().add("start")
+      , tlPage = gsap.timeline().add("start")
       , enterParams = {
         duration: .25,
         yPercent: 10,
@@ -47,28 +47,69 @@ const l = console.log.bind(window.console)
       case 'about':
       case 'hire':
       case 'course':
-        tl.from(`#${namespace}`, enterParams, "start")
+        tlPage.from(`#${namespace}`, enterParams, "start")
         break;
 
       default: // home
         // Home animation
         new Home(container)
 
-        gsap.to(".motion-text", {
-          motionPath: {
-            path: "#MyPath",
-            align: "#MyPath",
-            alignOrigin: [0.5, 0.5],
-            autoRotate: true
-          },
-          duration: 5,
-          ease: "power1.inOut"
-        });
+        // gsap.to(".motion-text", {
+        //   motionPath: {
+        //     path: "#MyPath",
+        //     align: "#MyPath",
+        //     alignOrigin: [0.5, 0.5],
+        //     autoRotate: true
+        //   },
+        //   duration: 5,
+        //   ease: "power1.inOut",
+        //   repeat: -1
+        // });
+
+        let split = new SplitText('.motion-text', { type: 'chars' }),
+          // svg = document.querySelector("svg"),
+          tl = gsap.timeline({
+            repeat: -1,
+            // onReverseComplete: () => tl.iteration(100)
+          }),
+          dur = 5,
+          each = dur * 0.03,
+          reversed = true;
+
+        // l(split)
+        tl.totalTime(tl.duration() * 100);
+
+        function animateLetters() {
+          let progress = tl.progress();
+          tl.totalProgress(0).clear();
+          split.chars.forEach((char, i) => {
+            let timeOffset = (i + 1) * each,
+              startTime = dur / 2 + timeOffset,
+              pathOffset = startTime / dur;
+
+            tl.to(char, {
+              motionPath: {
+                path: '#MyPath',
+                align: '#MyPath',
+                alignOrigin: [0.5, 0.5],
+                autoRotate: true,
+                start: pathOffset,
+                end: 1 + pathOffset
+              },
+              immediateRender: true,
+              duration: 5,
+              ease: 'none',
+            }, 0);
+          });
+          tl.progress(progress);
+        }
+
+        animateLetters()
         break;
     }
   }
 
-  gsap.registerPlugin()
+gsap.registerPlugin(ScrollTrigger, MotionPathPlugin, SplitText)
 
 // Home Animations Class
 class Home{
