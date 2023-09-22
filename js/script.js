@@ -66,20 +66,21 @@ const l = console.log.bind(window.console)
         //   repeat: -1
         // });
 
-        let split = new SplitText('.motion-text', { type: 'chars' }),
-          // svg = document.querySelector("svg"),
-          tl = gsap.timeline({
-            repeat: -1,
-            // onReverseComplete: () => tl.iteration(100)
-          }),
-          dur = 5,
-          each = dur * 0.03,
-          reversed = true;
+        function animateLetters1() {
+          let split = new SplitText('#motion-text1', { type: 'chars' }),
+            // svg = document.querySelector("svg"),
+            tl = gsap.timeline({
+              // repeat: -1,
+              // onReverseComplete: () => tl.iteration(100)
+            }),
+            dur = 5,
+            // dur = 0.1,
+            each = dur * 0.02, // controls spacing
+            reversed = true;
 
-        // l(split)
-        tl.totalTime(tl.duration() * 100);
+          // l(split)
+          // tl.totalTime(tl.duration() * 100);
 
-        function animateLetters() {
           let progress = tl.progress();
           tl.totalProgress(0).clear();
           split.chars.forEach((char, i) => {
@@ -94,22 +95,119 @@ const l = console.log.bind(window.console)
                 alignOrigin: [0.5, 0.5],
                 autoRotate: true,
                 start: pathOffset,
+                // start: 0,
+                // end: 1 + pathOffset
                 end: 1 + pathOffset
               },
               immediateRender: true,
               duration: 5,
               ease: 'none',
-            }, 0);
+            }, 0)
+              // .timeScale(.25)
           });
           tl.progress(progress);
+
+          tlGlobal.push(tl)
         }
 
-        animateLetters()
+        function animateLetters2() {
+          let split = new SplitText('#motion-text2', { type: 'chars' }),
+            // svg = document.querySelector("svg"),
+            tl = gsap.timeline({
+              repeat: -1,
+              // onReverseComplete: () => tl.iteration(100)
+            }),
+            dur = 5,
+            // dur = 0.1,
+            each = dur * 0.03, // controls spacing
+            reversed = true;
+
+          // l(split)
+          tl.totalTime(tl.duration() * 100);
+          let path = MotionPathPlugin.convertToPath($("#MyPath2"))
+          l(split, path)
+          let progress = tl.progress();
+          tl.totalProgress(0).clear();
+          split.chars.forEach((char, i) => {
+            let timeOffset = (i + 1) * each,
+              startTime = dur / 2 + timeOffset,
+              pathOffset = startTime / dur;
+
+            tl.to(char, {
+              motionPath: {
+                path: '#MyPath2',
+                align: '#MyPath2',
+                alignOrigin: [0.5, 0.5],
+                autoRotate: true,
+                start: pathOffset,
+                // start: 0,
+                // end: 1 + pathOffset
+                end: 1 + pathOffset
+              },
+              immediateRender: true,
+              duration: 5,
+              ease: 'none',
+            }, 0)
+              // .timeScale(.25)
+          });
+          tl.progress(progress);
+          tlGlobal.push(tl)
+        }
+
+        function animateLetters3() {
+          let split = new SplitText('#motion-text3', { type: 'chars' }),
+            // svg = document.querySelector("svg"),
+            tl = gsap.timeline({
+              repeat: -1,
+              // onReverseComplete: () => tl.iteration(100)
+            }),
+            dur = 5,
+            // dur = 0.1,
+            each = dur * 0.03, // controls spacing
+            reversed = true;
+
+          // l(split)
+          tl.totalTime(tl.duration() * 100);
+          let path = MotionPathPlugin.convertToPath($("#MyPath3"))
+          l(split, path)
+          let progress = tl.progress();
+          tl.totalProgress(0).clear();
+          split.chars.forEach((char, i) => {
+            let timeOffset = (i + 1) * each,
+              startTime = dur / 2 + timeOffset,
+              pathOffset = startTime / dur;
+
+            tl.to(char, {
+              motionPath: {
+                path: '#MyPath3',
+                align: '#MyPath3',
+                alignOrigin: [0.5, 0.5],
+                autoRotate: true,
+                start: pathOffset,
+                // start: 0,
+                // end: 1 + pathOffset
+                end: 1 + pathOffset
+              },
+              immediateRender: true,
+              duration: 5,
+              ease: 'none',
+            }, 0)
+              // .timeScale(.25)
+          });
+          tl.progress(progress);
+          tlGlobal.push(tl)
+        }
+
+        animateLetters1()
+        // animateLetters2()
+        // animateLetters3()
         break;
     }
   }
 
 gsap.registerPlugin(ScrollTrigger, MotionPathPlugin, SplitText)
+const tlGlobal = []
+window.tlGlobal = tlGlobal
 
 // Home Animations Class
 class Home{

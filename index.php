@@ -17,10 +17,9 @@
                 <!--<div class="col-span-1 row-span-2">
                   <img src="img/Mask group.png" alt="">
                 </div>-->
-                <div class="col-span-1 row-span-2">
-                  <div class="outer h-full w-full">
+                <div class="col-span-1 row-span-2 relative">
+                  <div class="outer h-full w-full absolute">
                     <svg
-                      class="border border-black"
                       width="100%"
                       height="100%"
                       viewBox="0 0 150 150"
@@ -30,36 +29,49 @@
                         <path
                           id="MyPath"
                           d="M 10 175
-                             L 10 0
-                             M 10 7.960204194457796e-15
-                             A 65 65 0 1 1 140 0
-                             L 140 175
-                             M 140 175
-                             A 65 65 0 1 1 10 175
-                             "
-                          stroke="none"
+                            L 10 0
+                            M 10 7.960204194457796e-15
+                            A 65 65 0 1 1 140 0
+                            L 140 175
+                            M 140 175
+                            A 65 65 0 1 1 10 175
+                          "
+                          stroke="black"
                           fill="none"
-                          stroke-width="1" />
-                        <!--<text>
-                          <textPath href="#MyPath" startOffset="0%">
-                            <animate attributeName="startOffset" from="0%" to="-100%" begin="0s" dur="5s" repeatCount="indefinite"></animate>
-                            Quick brown fox jumps over the lazy dog.
-                            Quick brown fox jumps over the lazy dog.
-                            Quick brown fox.
-                          </textPath>
-                        </text>-->
+                          stroke-width=".25"/>
                       </g>
-
                     </svg>
                   </div>
-                  <div class="motion-text text-black">Anurag Anurag</div>
+                  <div id="motion-text1" class="text-black text-3xl">KAYLA</div>
                   <!--<img src="img/Mask group.png" alt="">-->
                 </div>
                 <div>
-                  <img src="img/Mask group-0.png" alt="">
+                  <div class="outer h-full w-full absolute">
+                    <svg
+                      width="100%"
+                      height="100%"
+                      viewBox="0 0 150 150"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle id="MyPath2" cx="75" cy="75" r="18" fill="none" stroke="black" stroke-width=".1" />
+                    </svg>
+                  </div>
+                  <div id="motion-text2" class="text-black text-3xl">NILUU</div>
+                  <!--<img src="img/Mask group-0.png" alt="">-->
                 </div>
                 <div>
-                  <img src="img/Mask group-1.png" alt="">
+                  <div class="outer h-full w-full absolute">
+                    <svg
+                      width="100%"
+                      height="100%"
+                      viewBox="0 0 150 150"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle id="MyPath3" cx="75" cy="75" r="18" fill="none" stroke="black" stroke-width=".1" />
+                    </svg>
+                  </div>
+                  <div id="motion-text3" class="text-black text-3xl">NUDE</div>
+                  <!--<img src="img/Mask group-1.png" alt="">-->
                 </div>
                 <div>
                   <img src="img/Mask group-2.png" alt="">
