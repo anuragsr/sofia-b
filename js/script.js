@@ -114,7 +114,7 @@ const l = console.log.bind(window.console)
           let split = new SplitText('#motion-text2', { type: 'chars' }),
             // svg = document.querySelector("svg"),
             tl = gsap.timeline({
-              // repeat: -1,
+              repeat: -1,
               // onReverseComplete: () => tl.iteration(100)
             }),
             dur = 5,
@@ -200,7 +200,7 @@ const l = console.log.bind(window.console)
 
         animateLetters1()
         animateLetters2()
-        animateLetters3()
+        // animateLetters3()
         break;
     }
   }

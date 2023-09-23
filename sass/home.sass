@@ -11,9 +11,8 @@
       padding-bottom: 0
       .grid
         &>div
-          display: flex
-          align-items: center
-          justify-content: center
+          @extend %j-c
+          position: relative
           //outline: 1px solid green
           .hero-title
             background: #303030
@@ -52,26 +51,26 @@
               font-size: 12px
               font-family: "Courier New"
               letter-spacing: 1px
-        .flip-outer
-          @include pa(0, 0)
-          @extend %fhw
-          z-index: 1
-          perspective: 1000px
-          &:hover .flip-inner
-            transform: scale(.7) rotateX(180deg)
-          .flip-inner
+          .flip-outer
+            @include pa(0, 0)
             @extend %fhw
-            position: relative
-            transition: transform .5s
-            transform-style: preserve-3d
-            .flip-front, .flip-back
-              @include pa(0, 0)
+            z-index: 1
+            perspective: 1000px
+            &:hover .flip-inner
+              transform: scale(.75) rotateX(180deg)
+            .flip-inner
               @extend %fhw
-              -webkit-backface-visibility: hidden /* Safari */
-              backface-visibility: hidden
-              background-color: $tr
-            .flip-back
-              transform: rotateX(180deg)
+              position: relative
+              transition: transform .5s
+              transform-style: preserve-3d
+              .flip-front, .flip-back
+                @include pa(0, 0)
+                @extend %fhw
+                -webkit-backface-visibility: hidden /* Safari */
+                backface-visibility: hidden
+                background-color: $tr
+              .flip-back
+                transform: rotateX(180deg)
 
     &#section1
       height: unset

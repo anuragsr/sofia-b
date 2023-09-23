@@ -14,10 +14,7 @@
                 grid grid-cols-6 grid-rows-3
                 h-full w-full
               ">
-                <!--<div class="col-span-1 row-span-2">
-                  <img src="img/Mask group.png" alt="">
-                </div>-->
-                <div class="col-span-1 row-span-2 relative">
+                <div class="col-span-1 row-span-2">
                   <svg
                     class="absolute"
                     width="100%"
@@ -61,14 +58,23 @@
                       viewBox="0 0 150 150"
                       xmlns="http://www.w3.org/2000/svg"
                     >
-                      <circle id="MyPath2" cx="75" cy="75" r="20" fill="none" stroke="black" stroke-width=".1" />
+                      <circle id="MyPath2" cx="75" cy="75" r="67" fill="none" stroke="none" stroke-width=".1" />
                     </svg>
                   </div>
                   <div id="motion-text2" class="text-black text-3xl">NILUU</div>
-                  <!--<img src="img/Mask group-0.png" alt="">-->
+                  <div class="flip-outer">
+                    <div class="flip-inner">
+                      <div class="flip-front">
+                        <img src="img/Mask group-0.png" alt="">
+                      </div>
+                      <div class="flip-back">
+                        <img src="img/Mask group-0-back.png" alt="">
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div>
-                  <div class="outer h-full w-full absolute">
+                  <!--<div class="outer h-full w-full absolute">
                     <svg
                       width="100%"
                       height="100%"
@@ -78,8 +84,8 @@
                       <circle id="MyPath3" cx="75" cy="75" r="20" fill="none" stroke="black" stroke-width=".1" />
                     </svg>
                   </div>
-                  <div id="motion-text3" class="text-black text-3xl">NUDE</div>
-                  <!--<img src="img/Mask group-1.png" alt="">-->
+                  <div id="motion-text3" class="text-black text-3xl">NUDE</div>-->
+                  <img src="img/Mask group-1.png" alt="">
                 </div>
                 <div>
                   <img src="img/Mask group-2.png" alt="">
