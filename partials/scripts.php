@@ -4,5 +4,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/MotionPathPlugin.min.js"></script>
 <script src="https://unpkg.com/@barba/core"></script>
 <script src="js/SplitText.min.js"></script>
+<script>
+  const heroImages = <?php echo json_encode($heroItems, JSON_HEX_TAG); ?>;
+</script>
 <script src="js/script.js"></script>
 <script src="//192.168.0.102:35729/livereload.js?snipver=1"></script>

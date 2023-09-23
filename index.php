@@ -74,24 +74,360 @@
                   </div>
                 </div>
                 <div>
-                  <!--<div class="outer h-full w-full absolute">
+                  <div class="outer h-full w-full absolute">
                     <svg
                       width="100%"
                       height="100%"
                       viewBox="0 0 150 150"
                       xmlns="http://www.w3.org/2000/svg"
                     >
-                      <circle id="MyPath3" cx="75" cy="75" r="20" fill="none" stroke="black" stroke-width=".1" />
+                      <circle id="MyPath2" cx="75" cy="75" r="67" fill="none" stroke="none" stroke-width=".1" />
                     </svg>
                   </div>
-                  <div id="motion-text3" class="text-black text-3xl">NUDE</div>-->
-                  <img src="img/Mask group-1.png" alt="">
+                  <div id="motion-text3" class="text-black text-3xl">NUDE</div>
+                  <div class="flip-outer">
+                    <div class="flip-inner">
+                      <div class="flip-front">
+                        <img src="img/Mask group-1.png" alt="">
+                      </div>
+                      <div class="flip-back">
+                        <img src="img/Mask group-1-back.png" alt="">
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div>
-                  <img src="img/Mask group-2.png" alt="">
+                  <div class="outer h-full w-full absolute">
+                    <svg
+                      width="100%"
+                      height="100%"
+                      viewBox="0 0 150 150"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle id="MyPath2" cx="75" cy="75" r="67" fill="none" stroke="none" stroke-width=".1" />
+                    </svg>
+                  </div>
+                  <div id="motion-text3" class="text-black text-3xl">NUDE</div>
+                  <div class="flip-outer">
+                    <div class="flip-inner">
+                      <div class="flip-front">
+                        <img src="img/Mask group-2.png" alt="">
+                      </div>
+                      <div class="flip-back">
+                        <img src="img/Mask group-2-back.png" alt="">
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div class="col-span-2 row-span-1">
-                  <img src="img/Mask group-3.png" alt="">
+                  <div class="outer h-full w-full absolute">
+                    <svg
+                      width="100%"
+                      height="100%"
+                      viewBox="0 0 150 150"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle id="MyPath2" cx="75" cy="75" r="67" fill="none" stroke="none" stroke-width=".1" />
+                    </svg>
+                  </div>
+                  <div id="motion-text3" class="text-black text-3xl">NUDE</div>
+                  <div class="flip-outer">
+                    <div class="flip-inner">
+                      <div class="flip-front">
+                        <img src="img/Mask group-3.png" alt="">
+                      </div>
+                      <div class="flip-back">
+                        <img src="img/Mask group-3-back.png" alt="">
+                      </div>
+                    </div>
+                  </div>>
+                </div>
+                <div id="svg1">
+                  <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                         class="grid-item"
+                         width="100%"
+                         height="100%"
+                         viewBox="0 0 150 150"
+                         preserveAspectRatio="xMidYMid meet"
+                    >
+                      <circle cx="75" cy="75" r="74" />
+                      <g>
+                        <path id="path1" d="M 64,0 A 64,64 0 0 1 -64,0 A 64,64 0 0 1 64,0" />
+                        <text>
+                          <textPath xlink:href="#path1">
+                            <tspan dy="10">ABOUT SOFIA</tspan>
+                          </textPath>
+                        </text>
+                      </g>
+                      <g>
+                        <path id="path2" d="M 64,0 A 64,64 0 0 1 -64,0 A 64,64 0 0 1 64,0" />
+                        <text>
+                          <textPath xlink:href="#path2">
+                            <tspan dy="10">GET TO KNOW MORE</tspan>
+                          </textPath>
+                        </text>
+                      </g>
+                    </svg>
+                  </a>
+                </div>
+                <div class="col-span-2 row-span-1">
+                  <div class="hero-title
+                  h-full w-full flex flex-col
+                  justify-center align-center
+                  rounded-full
+                ">
+                    Web Design, Development<br/> & Email Marketing
+                  </div>
+                </div>
+                <div>
+                  <img src="img/Mask group-4.png" alt="">
+                </div>
+                <div>
+                  <img src="img/Mask group-5.png" alt="">
+                </div>
+                <div>
+                  <img src="img/Mask group-6.png" alt="">
+                </div>
+                <div class="col-span-2 row-span-1">
+                  <img src="img/Mask group-7.png" alt="">
+                </div>
+                <div>
+                  <img src="img/Mask group-8.png" alt="">
+                </div>
+                <div>
+                  <img src="img/Mask group-9.png" alt="">
+                </div>
+                <div id="svg2">
+                  <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                         class="grid-item"
+                         width="100%"
+                         height="100%"
+                         viewBox="0 0 150 150"
+                         preserveAspectRatio="xMidYMid meet"
+                    >
+                      <circle cx="75" cy="75" r="74" />
+                      <g>
+                        <path id="path1" d="M 64,0 A 64,64 0 0 1 -64,0 A 64,64 0 0 1 64,0"
+                              transform="translate(75, 75) rotate(185)" fill="none" stroke="none" stroke-width="15"/>
+                        <text>
+                          <textPath xlink:href="#path1">
+                            <tspan dy="10">WORK WITH ME</tspan>
+                          </textPath>
+                        </text>
+                      </g>
+                      <g>
+                        <path id="path2" d="M 64,0 A 64,64 0 0 1 -64,0 A 64,64 0 0 1 64,0"
+                              transform="translate(75, 75) rotate(-25)" fill="none" stroke="none" stroke-width="15"/>
+                        <text>
+                          <textPath xlink:href="#path2">
+                            <tspan dy="10">LET'S GET STARTED</tspan>
+                          </textPath>
+                        </text>
+                      </g>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="text-black overflow-scroll">
+              <?php
+                $heroItems = array(
+                  array(
+                    "title" => "KAYLA",
+                    "classNames" => "col-span-1 row-span-2",
+                    "front" => "img/Mask group.png",
+                    "back" => "img/Mask group-back.png"
+                  ),
+                  array(
+                    "title" => "NILUU",
+                    "classNames" => "",
+                    "front" => "img/Mask group-0.png",
+                    "back" => "img/Mask group-0-back.png"
+                  ),
+                );
+                
+                echo "<pre>".json_encode($heroItems)."</pre>";
+              ?>
+            </div>
+            <div class="p-12 px-4 h-full w-full scale-95">
+              <div class="
+                grid grid-cols-6 grid-rows-3
+                h-full w-full
+              ">
+                <?php
+                 $i = 0;
+                 // Improve using DOMDocument
+                 foreach($heroItems as $item){
+                   echo $div = '
+                     <div class="'.$item["classNames"].'">
+                     <svg
+                        class="absolute"
+                        width="100%"
+                        height="100%"
+                        viewBox="0 0 150 150"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <!--<g transform="translate(0, 15)">
+                          <path
+                            id="MyPath"
+                            d="M 10 175
+                              L 10 0
+                              M 10 7.960204194457796e-15
+                              A 65 65 0 1 1 140 0
+                              L 140 175
+                              M 140 175
+                              A 65 65 0 1 1 10 175
+                            "
+                            stroke="none"
+                            fill="none"
+                            stroke-width=".25"/>
+                        </g>-->
+                      </svg>
+                      <div id="motion-text1" class="text-black text-3xl">KAYLA</div>
+                      <div class="flip-outer">
+                        <div class="flip-inner">
+                          <div class="flip-front">
+                            <img src="'.$item["front"].'" alt="" />
+                          </div>
+                          <div class="flip-back">
+                            <img src="'.$item["back"].'" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                     </div>
+                   ';
+                   $i++;
+                 }
+                ?>
+                <!--<div class="col-span-1 row-span-2">
+                  <svg
+                    class="absolute"
+                    width="100%"
+                    height="100%"
+                    viewBox="0 0 150 150"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g transform="translate(0, 15)">
+                      <path
+                        id="MyPath"
+                        d="M 10 175
+                          L 10 0
+                          M 10 7.960204194457796e-15
+                          A 65 65 0 1 1 140 0
+                          L 140 175
+                          M 140 175
+                          A 65 65 0 1 1 10 175
+                        "
+                        stroke="none"
+                        fill="none"
+                        stroke-width=".25"/>
+                    </g>
+                  </svg>
+                  <div id="motion-text1" class="text-black text-3xl">KAYLA</div>
+                  <div class="flip-outer">
+                    <div class="flip-inner">
+                      <div class="flip-front">
+                        <img src="img/Mask group.png" alt="">
+                      </div>
+                      <div class="flip-back">
+                        <img src="img/Mask group-back.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="outer h-full w-full absolute">
+                    <svg
+                      width="100%"
+                      height="100%"
+                      viewBox="0 0 150 150"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle id="MyPath2" cx="75" cy="75" r="67" fill="none" stroke="none" stroke-width=".1" />
+                    </svg>
+                  </div>
+                  <div id="motion-text2" class="text-black text-3xl">NILUU</div>
+                  <div class="flip-outer">
+                    <div class="flip-inner">
+                      <div class="flip-front">
+                        <img src="img/Mask group-0.png" alt="">
+                      </div>
+                      <div class="flip-back">
+                        <img src="img/Mask group-0-back.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>-->
+                <div>
+                  <div class="outer h-full w-full absolute">
+                    <svg
+                      width="100%"
+                      height="100%"
+                      viewBox="0 0 150 150"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle id="MyPath2" cx="75" cy="75" r="67" fill="none" stroke="none" stroke-width=".1" />
+                    </svg>
+                  </div>
+                  <div id="motion-text3" class="text-black text-3xl">NUDE</div>
+                  <div class="flip-outer">
+                    <div class="flip-inner">
+                      <div class="flip-front">
+                        <img src="img/Mask group-1.png" alt="">
+                      </div>
+                      <div class="flip-back">
+                        <img src="img/Mask group-1-back.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="outer h-full w-full absolute">
+                    <svg
+                      width="100%"
+                      height="100%"
+                      viewBox="0 0 150 150"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle id="MyPath2" cx="75" cy="75" r="67" fill="none" stroke="none" stroke-width=".1" />
+                    </svg>
+                  </div>
+                  <div id="motion-text3" class="text-black text-3xl">NUDE</div>
+                  <div class="flip-outer">
+                    <div class="flip-inner">
+                      <div class="flip-front">
+                        <img src="img/Mask group-2.png" alt="">
+                      </div>
+                      <div class="flip-back">
+                        <img src="img/Mask group-2-back.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-span-2 row-span-1">
+                  <div class="outer h-full w-full absolute">
+                    <svg
+                      width="100%"
+                      height="100%"
+                      viewBox="0 0 150 150"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle id="MyPath2" cx="75" cy="75" r="67" fill="none" stroke="none" stroke-width=".1" />
+                    </svg>
+                  </div>
+                  <div id="motion-text3" class="text-black text-3xl">NUDE</div>
+                  <div class="flip-outer">
+                    <div class="flip-inner">
+                      <div class="flip-front">
+                        <img src="img/Mask group-3.png" alt="">
+                      </div>
+                      <div class="flip-back">
+                        <img src="img/Mask group-3-back.png" alt="">
+                      </div>
+                    </div>
+                  </div>>
                 </div>
                 <div id="svg1">
                   <a href="#">
