@@ -52,7 +52,26 @@
               font-size: 12px
               font-family: "Courier New"
               letter-spacing: 1px
-
+        .flip-outer
+          @include pa(0, 0)
+          @extend %fhw
+          z-index: 1
+          perspective: 1000px
+          &:hover .flip-inner
+            transform: scale(.7) rotateX(180deg)
+          .flip-inner
+            @extend %fhw
+            position: relative
+            transition: transform .5s
+            transform-style: preserve-3d
+            .flip-front, .flip-back
+              @include pa(0, 0)
+              @extend %fhw
+              -webkit-backface-visibility: hidden /* Safari */
+              backface-visibility: hidden
+              background-color: $tr
+            .flip-back
+              transform: rotateX(180deg)
 
     &#section1
       height: unset

@@ -70,7 +70,7 @@ const l = console.log.bind(window.console)
           let split = new SplitText('#motion-text1', { type: 'chars' }),
             // svg = document.querySelector("svg"),
             tl = gsap.timeline({
-              // repeat: -1,
+              repeat: -1,
               // onReverseComplete: () => tl.iteration(100)
             }),
             dur = 5,
@@ -81,8 +81,8 @@ const l = console.log.bind(window.console)
           // l(split)
           // tl.totalTime(tl.duration() * 100);
 
-          let progress = tl.progress();
-          tl.totalProgress(0).clear();
+          // let progress = tl.progress();
+          // tl.totalProgress(0).clear();
           split.chars.forEach((char, i) => {
             let timeOffset = (i + 1) * each,
               startTime = dur / 2 + timeOffset,
@@ -105,7 +105,7 @@ const l = console.log.bind(window.console)
             }, 0)
               // .timeScale(.25)
           });
-          tl.progress(progress);
+          // tl.progress(progress);
 
           tlGlobal.push(tl)
         }
@@ -114,7 +114,7 @@ const l = console.log.bind(window.console)
           let split = new SplitText('#motion-text2', { type: 'chars' }),
             // svg = document.querySelector("svg"),
             tl = gsap.timeline({
-              repeat: -1,
+              // repeat: -1,
               // onReverseComplete: () => tl.iteration(100)
             }),
             dur = 5,
@@ -158,7 +158,7 @@ const l = console.log.bind(window.console)
           let split = new SplitText('#motion-text3', { type: 'chars' }),
             // svg = document.querySelector("svg"),
             tl = gsap.timeline({
-              repeat: -1,
+              // repeat: -1,
               // onReverseComplete: () => tl.iteration(100)
             }),
             dur = 5,
@@ -199,8 +199,8 @@ const l = console.log.bind(window.console)
         }
 
         animateLetters1()
-        // animateLetters2()
-        // animateLetters3()
+        animateLetters2()
+        animateLetters3()
         break;
     }
   }

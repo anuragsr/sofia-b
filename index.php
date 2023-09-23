@@ -18,32 +18,40 @@
                   <img src="img/Mask group.png" alt="">
                 </div>-->
                 <div class="col-span-1 row-span-2 relative">
-                  <div class="outer h-full w-full absolute">
-                    <svg
-                      width="100%"
-                      height="100%"
-                      viewBox="0 0 150 150"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <g transform="translate(0, -13)">
-                        <path
-                          id="MyPath"
-                          d="M 10 175
-                            L 10 0
-                            M 10 7.960204194457796e-15
-                            A 65 65 0 1 1 140 0
-                            L 140 175
-                            M 140 175
-                            A 65 65 0 1 1 10 175
-                          "
-                          stroke="black"
-                          fill="none"
-                          stroke-width=".25"/>
-                      </g>
-                    </svg>
-                  </div>
+                  <svg
+                    class="absolute"
+                    width="100%"
+                    height="100%"
+                    viewBox="0 0 150 150"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g transform="translate(0, 15)">
+                      <path
+                        id="MyPath"
+                        d="M 10 175
+                          L 10 0
+                          M 10 7.960204194457796e-15
+                          A 65 65 0 1 1 140 0
+                          L 140 175
+                          M 140 175
+                          A 65 65 0 1 1 10 175
+                        "
+                        stroke="none"
+                        fill="none"
+                        stroke-width=".25"/>
+                    </g>
+                  </svg>
                   <div id="motion-text1" class="text-black text-3xl">KAYLA</div>
-                  <!--<img src="img/Mask group.png" alt="">-->
+                  <div class="flip-outer">
+                    <div class="flip-inner">
+                      <div class="flip-front">
+                        <img src="img/Mask group.png" alt="">
+                      </div>
+                      <div class="flip-back">
+                        <img src="img/Mask group-back.png" alt="">
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div>
                   <div class="outer h-full w-full absolute">
@@ -53,7 +61,7 @@
                       viewBox="0 0 150 150"
                       xmlns="http://www.w3.org/2000/svg"
                     >
-                      <circle id="MyPath2" cx="75" cy="75" r="18" fill="none" stroke="black" stroke-width=".1" />
+                      <circle id="MyPath2" cx="75" cy="75" r="20" fill="none" stroke="black" stroke-width=".1" />
                     </svg>
                   </div>
                   <div id="motion-text2" class="text-black text-3xl">NILUU</div>
@@ -67,7 +75,7 @@
                       viewBox="0 0 150 150"
                       xmlns="http://www.w3.org/2000/svg"
                     >
-                      <circle id="MyPath3" cx="75" cy="75" r="18" fill="none" stroke="black" stroke-width=".1" />
+                      <circle id="MyPath3" cx="75" cy="75" r="20" fill="none" stroke="black" stroke-width=".1" />
                     </svg>
                   </div>
                   <div id="motion-text3" class="text-black text-3xl">NUDE</div>
