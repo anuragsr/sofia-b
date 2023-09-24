@@ -67,7 +67,7 @@ const l = console.log.bind(window.console)
         // });
 
         function animateLetters1() {
-          let split = new SplitText('#motion-text1', { type: 'chars' }),
+          let split = new SplitText('#hero0 .animated-text', { type: 'chars' }),
             // svg = document.querySelector("svg"),
             tl = gsap.timeline({
               repeat: -1,
@@ -90,8 +90,8 @@ const l = console.log.bind(window.console)
 
             tl.to(char, {
               motionPath: {
-                path: '#MyPath',
-                align: '#MyPath',
+                path: '#hero0 svg .path-for-text',
+                align: '#hero0 svg .path-for-text',
                 alignOrigin: [0.5, 0.5],
                 autoRotate: true,
                 start: pathOffset,
@@ -111,7 +111,7 @@ const l = console.log.bind(window.console)
         }
 
         function animateLetters2() {
-          let split = new SplitText('#motion-text2', { type: 'chars' }),
+          let split = new SplitText('#hero1 .animated-text', { type: 'chars' }),
             // svg = document.querySelector("svg"),
             tl = gsap.timeline({
               repeat: -1,
@@ -124,7 +124,7 @@ const l = console.log.bind(window.console)
 
           // l(split)
           tl.totalTime(tl.duration() * 100);
-          let path = MotionPathPlugin.convertToPath($("#MyPath2"))
+          let path = MotionPathPlugin.convertToPath($("#hero1 svg .path-for-text"))
           l(split, path)
           let progress = tl.progress();
           tl.totalProgress(0).clear();
@@ -135,8 +135,8 @@ const l = console.log.bind(window.console)
 
             tl.to(char, {
               motionPath: {
-                path: '#MyPath2',
-                align: '#MyPath2',
+                path: '#hero1 svg .path-for-text',
+                align: '#hero1 svg .path-for-text',
                 alignOrigin: [0.5, 0.5],
                 autoRotate: true,
                 start: pathOffset,
@@ -154,8 +154,8 @@ const l = console.log.bind(window.console)
           tlGlobal.push(tl)
         }
 
-        animateLetters1()
-        animateLetters2()
+        // animateLetters1()
+        // animateLetters2()
         break;
     }
   }
@@ -164,7 +164,6 @@ gsap.registerPlugin(ScrollTrigger, MotionPathPlugin, SplitText)
 const tlGlobal = []
 window.tlGlobal = tlGlobal
 
-l(heroImages)
 // Home Animations Class
 class Home{
   constructor(el){
