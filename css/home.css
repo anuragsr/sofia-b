@@ -1,4 +1,4 @@
-#home section#section0 .grid > div .flip-outer .flip-inner .flip-front, #home section#section0 .grid > div .flip-outer .flip-inner .flip-back, #home section#section0 .grid > div .flip-outer .flip-inner, #home section#section0 .grid > div .flip-outer, #home section#section0 .grid > div img {
+#home section#section0 .grid > div.flip .flip-outer .flip-inner .flip-front, #home section#section0 .grid > div.flip .flip-outer .flip-inner .flip-back, #home section#section0 .grid > div.flip .flip-outer .flip-inner, #home section#section0 .grid > div.flip .flip-outer, #home section#section0 .grid > div.flip .screen, #home section#section0 .grid > div img {
   height: 100%;
   width: 100%;
 }
@@ -65,22 +65,42 @@
   font-family: "Courier New";
   letter-spacing: 1px;
 }
-#home section#section0 .grid > div .flip-outer {
+#home section#section0 .grid > div.flip {
+  overflow: hidden;
+}
+#home section#section0 .grid > div.flip .animated-text {
+  position: relative;
+  z-index: 0;
+}
+#home section#section0 .grid > div.flip svg .path-for-text {
+  stroke: none;
+  fill: none;
+  stroke-width: 0.25;
+}
+#home section#section0 .grid > div.flip .screen {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: #efecec;
+  z-index: 1;
+  opacity: 0.9;
+}
+#home section#section0 .grid > div.flip .flip-outer {
   position: absolute;
   top: 0px;
   left: 0px;
   z-index: 1;
   perspective: 1000px;
 }
-#home section#section0 .grid > div .flip-outer:hover .flip-inner {
+#home section#section0 .grid > div.flip .flip-outer:hover .flip-inner {
   transform: scale(0.75) rotateX(180deg);
 }
-#home section#section0 .grid > div .flip-outer .flip-inner {
+#home section#section0 .grid > div.flip .flip-outer .flip-inner {
   position: relative;
   transition: transform 0.5s;
   transform-style: preserve-3d;
 }
-#home section#section0 .grid > div .flip-outer .flip-inner .flip-front, #home section#section0 .grid > div .flip-outer .flip-inner .flip-back {
+#home section#section0 .grid > div.flip .flip-outer .flip-inner .flip-front, #home section#section0 .grid > div.flip .flip-outer .flip-inner .flip-back {
   position: absolute;
   top: 0px;
   left: 0px;
@@ -88,7 +108,7 @@
   backface-visibility: hidden;
   background-color: transparent;
 }
-#home section#section0 .grid > div .flip-outer .flip-inner .flip-back {
+#home section#section0 .grid > div.flip .flip-outer .flip-inner .flip-back {
   transform: rotateX(180deg);
 }
 #home section#section1 {

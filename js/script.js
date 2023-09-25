@@ -170,6 +170,7 @@ class Home{
     this.el = el
     // Hero Images
     this.heroImages = $("#section0 .grid > div")
+    this.heroFlipImages = $("#section0 .grid > div.flip")
 
     // Carousel
     this.tickerWrapper = $(".ticker-wrapper")
@@ -180,31 +181,159 @@ class Home{
     this.init()
   }
   init(){
-    // // Hero images animation
-    // this.heroImagesTl()
+    // Hero images animation
+    this.heroImagesAnims()
 
     // Ticker animation
-    this.tickerTl()
+    this.tickerAnim()
 
     // Scroll animation
-    this.scrollTl()
+    this.scrollAnim()
 
     // Events
     // this.addEvents()
   }
-  heroImagesTl(){
-    gsap.timeline()
-      .from(this.heroImages, {
-        delay: 1,
-        opacity: 0,
-        x: "random(-50, 50, 5)",
-        y: "random(-50, 50, 5)",
-        scale: .9,
-        stagger: .05,
-        duration: .75
-      })
+  heroImagesAnims(){
+    // // Appearing animation
+    // gsap.timeline()
+    //   .from(this.heroImages, {
+    //     delay: 1,
+    //     opacity: 0,
+    //     x: "random(-50, 50, 5)",
+    //     y: "random(-50, 50, 5)",
+    //     scale: .9,
+    //     stagger: .05,
+    //     duration: .75
+    //   })
+
+    // Individual animations
+    const { heroFlipImages } = this
+      , flipParams = [
+        {
+          el: $(heroFlipImages[0]),
+          timeOffset: .02,
+          // flipScale: .75,
+          maskTop: "25%",
+          tlStart: 0,
+          tlEnd: 1,
+          tlTimeScale: 1
+        },
+        {
+          el: $(heroFlipImages[1]),
+          timeOffset: .03,
+          // flipScale: .75,
+          maskTop: "25%",
+          tlStart: 0,
+          tlEnd: 1,
+          tlTimeScale: 1
+        },
+        {
+          el: $(heroFlipImages[2]),
+          timeOffset: .03,
+          // flipScale: .75,
+          maskTop: "25%",
+          tlStart: 0,
+          tlEnd: 1,
+          tlTimeScale: 1
+        },
+        {
+          el: $(heroFlipImages[3]),
+          timeOffset: .03,
+          // flipScale: .75,
+          maskTop: "25%",
+          tlStart: 0,
+          tlEnd: 1,
+          tlTimeScale: 1
+        },
+        {
+          el: $(heroFlipImages[4]),
+          timeOffset: .02,
+          // flipScale: .75,
+          maskTop: "25%",
+          tlStart: 0,
+          tlEnd: 1,
+          tlTimeScale: 1
+        },
+        {
+          el: $(heroFlipImages[5]),
+          timeOffset: .03,
+          // flipScale: .75,
+          maskTop: "25%",
+          tlStart: 0,
+          tlEnd: 1,
+          tlTimeScale: 1
+        }
+      ]
+      , fullPath = el => {
+        el = el[0]
+        var names = [];
+        while (el.parentNode){
+          if (el.id){
+            names.unshift('#'+el.id);
+            break;
+          }else{
+            if (el==el.ownerDocument.documentElement) names.unshift(el.tagName);
+            else{
+              for (var c=1,e=el;e.previousElementSibling;e=e.previousElementSibling,c++);
+              names.unshift(el.tagName+":nth-child("+c+")");
+            }
+            el=el.parentNode;
+          }
+        }
+        return names.join(" > ");
+      }
+      , singleHeroImageTls = () => {
+
+        l(this.heroFlipImages)
+
+        flipParams.forEach((param, idx) => {
+
+          const split = new SplitText(param.el.find('.animated-text'), { type: 'chars' })
+            , tl = gsap.timeline({ repeat: -1 })
+            , dur = 5
+            , each = dur * param.timeOffset // controls spacing
+            // , path = `#section0 .grid > div.flip .path-for-text:nth-of-type(${idx + 1})`
+
+          let path = fullPath(param.el.find(".path-for-text"))
+          if([1, 2, 3, 5].includes(idx)) {
+            MotionPathPlugin.convertToPath(path)
+            path = fullPath(param.el.find(".path-for-text"))
+          }
+
+          tl.set(param.el.find(".screen"), { top: param.maskTop })
+
+          // Text animation timeline
+          split.chars.forEach((char, i) => {
+            let timeOffset = (i + 1) * each,
+              startTime = dur / 2 + timeOffset,
+              pathOffset = startTime / dur;
+
+            tl.to(char, {
+              motionPath: {
+                path: path,
+                align: path,
+                alignOrigin: [0.5, 0.5],
+                autoRotate: true,
+                start: pathOffset,
+                end: 1 + pathOffset,
+                // start: 0,
+                // end: 1 + pathOffset
+              },
+              immediateRender: true,
+              duration: 5,
+              ease: 'none',
+            }, 0)
+            .timeScale(param.tlTimeScale) // controls animation speed
+          });
+
+          // Flip animation timeline
+          tlGlobal.push(tl)
+        })
+      }
+
+    singleHeroImageTls()
   }
-  scrollTl(){
+  scrollAnim(){
     gsap.timeline({
       scrollTrigger: {
         markers: !false,
@@ -216,7 +345,7 @@ class Home{
     .from("#section2 .border", {y: 50, opacity: 0, duration: .5, stagger: .25})
     .from("footer", {opacity: 0, duration: .5})
   }
-  tickerTl(){
+  tickerAnim(){
     const time = 50,
       { tickerWrapper, list, clonedList, infinite } = this
     let listWidth = 0

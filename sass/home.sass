@@ -51,26 +51,49 @@
               font-size: 12px
               font-family: "Courier New"
               letter-spacing: 1px
-          .flip-outer
-            @include pa(0, 0)
-            @extend %fhw
-            z-index: 1
-            perspective: 1000px
-            &:hover .flip-inner
-              transform: scale(.75) rotateX(180deg)
-            .flip-inner
-              @extend %fhw
+
+          &.flip
+            overflow: hidden
+            .animated-text
               position: relative
-              transition: transform .5s
-              transform-style: preserve-3d
-              .flip-front, .flip-back
-                @include pa(0, 0)
+              z-index: 0
+            svg .path-for-text
+              //outline: 1px solid salmon
+              stroke: none
+              fill: none
+              stroke-width: .25
+            //img
+            //  display: none
+            .screen
+              //display: none
+              @include pa(0, 0)
+              @extend %fhw
+              //top: 25%
+              background: $pr
+              z-index: 1
+              opacity: .9
+              //background: darkgreen
+              //outline: 1px solid salmon
+            .flip-outer
+              @include pa(0, 0)
+              @extend %fhw
+              z-index: 1
+              perspective: 1000px
+              &:hover .flip-inner
+                transform: scale(.75) rotateX(180deg)
+              .flip-inner
                 @extend %fhw
-                -webkit-backface-visibility: hidden /* Safari */
-                backface-visibility: hidden
-                background-color: $tr
-              .flip-back
-                transform: rotateX(180deg)
+                position: relative
+                transition: transform .5s
+                transform-style: preserve-3d
+                .flip-front, .flip-back
+                  @include pa(0, 0)
+                  @extend %fhw
+                  -webkit-backface-visibility: hidden /* Safari */
+                  backface-visibility: hidden
+                  background-color: $tr
+                .flip-back
+                  transform: rotateX(180deg)
 
     &#section1
       height: unset
