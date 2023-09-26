@@ -262,7 +262,52 @@ class Home{
           tlStart: 0,
           tlEnd: 1,
           tlTimeScale: 1
-        }
+        },
+        {
+          el: $(heroFlipImages[6]),
+          timeOffset: .03,
+          // flipScale: .75,
+          maskTop: "25%",
+          tlStart: 0,
+          tlEnd: 1,
+          tlTimeScale: 1
+        },
+        {
+          el: $(heroFlipImages[7]),
+          timeOffset: .03,
+          // flipScale: .75,
+          maskTop: "25%",
+          tlStart: 0,
+          tlEnd: 1,
+          tlTimeScale: 1
+        },
+        {
+          el: $(heroFlipImages[8]),
+          timeOffset: .02,
+          // flipScale: .75,
+          maskTop: "25%",
+          tlStart: 0,
+          tlEnd: 1,
+          tlTimeScale: 1
+        },
+        {
+          el: $(heroFlipImages[9]),
+          timeOffset: .03,
+          // flipScale: .75,
+          maskTop: "25%",
+          tlStart: 0,
+          tlEnd: 1,
+          tlTimeScale: 1
+        },
+        {
+          el: $(heroFlipImages[10]),
+          timeOffset: .03,
+          // flipScale: .75,
+          maskTop: "25%",
+          tlStart: 0,
+          tlEnd: 1,
+          tlTimeScale: 1
+        },
       ]
       , fullPath = el => {
         el = el[0]
@@ -295,7 +340,7 @@ class Home{
             // , path = `#section0 .grid > div.flip .path-for-text:nth-of-type(${idx + 1})`
 
           let path = fullPath(param.el.find(".path-for-text"))
-          if([1, 2, 3, 5].includes(idx)) {
+          if(![0, 4, 8].includes(idx)) {
             MotionPathPlugin.convertToPath(path)
             path = fullPath(param.el.find(".path-for-text"))
           }

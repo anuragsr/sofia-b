@@ -206,19 +206,125 @@
                   </div>
                 </div>
                 <div class="flip">
-                  <img src="img/Mask group-5.png" alt="">
+                  <svg
+                    class="absolute"
+                    width="100%"
+                    height="100%"
+                    viewBox="0 0 150 150"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle class="path-for-text" cx="75" cy="75" r="67" fill="none" stroke="none" stroke-width=".1" />
+                  </svg>
+                  <div class="screen"></div>
+                  <div class="animated-text text-black text-3xl">MOM'S&nbsp;EYE</div>
+                  <div class="flip-outer">
+                    <div class="flip-inner">
+                      <div class="flip-front">
+                        <img src="img/Mask group-5.png" alt="">
+                      </div>
+                      <div class="flip-back">
+                        <img src="img/Mask group-5-back.png" alt="">
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div class="flip">
-                  <img src="img/Mask group-6.png" alt="">
+                  <svg
+                    class="absolute"
+                    width="100%"
+                    height="100%"
+                    viewBox="0 0 150 150"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle class="path-for-text" cx="75" cy="75" r="67" fill="none" stroke="none" stroke-width=".1" />
+                  </svg>
+                  <div class="screen"></div>
+                  <div class="animated-text text-black text-3xl">SHOP&nbsp;LX</div>
+                  <div class="flip-outer">
+                    <div class="flip-inner">
+                      <div class="flip-front">
+                        <img src="img/Mask group-6.png" alt="">
+                      </div>
+                      <div class="flip-back">
+                        <img src="img/Mask group-6-back.png" alt="">
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div class="flip col-span-2 row-span-1">
-                  <img src="img/Mask group-7.png" alt="">
+                  <svg
+                    class="absolute"
+                    width="100%"
+                    height="100%"
+                    viewBox="0 0 150 150"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g transform-origin="center" transform="translate(12, 0) scale(.8, 1) rotate(90)">
+                      <path
+                        class="path-for-text"
+                        d="M 10 175
+                          L 10 0
+                          M 10 7.960204194457796e-15
+                          A 65 65 0 1 1 140 0
+                          L 140 175
+                          M 140 175
+                          A 65 65 0 1 1 10 175
+                        "/>
+                    </g>
+                  </svg>
+                  <div class="screen"></div>
+                  <div class="animated-text text-black text-3xl">XU&nbsp;COLLECTIVE</div>
+                  <div class="flip-outer">
+                    <div class="flip-inner">
+                      <div class="flip-front">
+                        <img src="img/Mask group-7.png" alt="">
+                      </div>
+                      <div class="flip-back">
+                        <img src="img/Mask group-7-back.png" alt="">
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div class="flip">
-                  <img src="img/Mask group-8.png" alt="">
+                  <svg
+                    class="absolute"
+                    width="100%"
+                    height="100%"
+                    viewBox="0 0 150 150"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle class="path-for-text" cx="75" cy="75" r="67" fill="none" stroke="none" stroke-width=".1" />
+                  </svg>
+                  <div class="screen"></div>
+                  <div class="animated-text text-black text-3xl">SHOP&nbsp;LX</div>
+                  <div class="flip-outer">
+                    <div class="flip-inner">
+                      <div class="flip-front">
+                        <img src="img/Mask group-8.png" alt="">
+                      </div>
+                      <div class="flip-back">
+                        <img src="img/Mask group-8-back.png" alt="">
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div class="flip">
-                  <img src="img/Mask group-9.png" alt="">
+                  <svg
+                    class="absolute"
+                    width="100%"
+                    height="100%"
+                    viewBox="0 0 150 150"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle class="path-for-text" cx="75" cy="75" r="67" fill="none" stroke="none" stroke-width=".1" />
+                  </svg>
+                  <div class="screen"></div>
+                  <div class="animated-text text-black text-3xl">SHOP&nbsp;LX</div>
+                  <div class="flip-outer">
+                    <div class="flip-inner">
+                      <div class="flip-front">
+                        <img src="img/Mask group-9.png" alt="">
+                      </div>
+                      <div class="flip-back">
+                        <img src="img/Mask group-9-back.png" alt="">
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div id="svg2">
                   <a href="#">
