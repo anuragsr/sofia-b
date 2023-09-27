@@ -54,7 +54,9 @@
                     height="100%"
                     viewBox="0 0 150 150"
                     xmlns="http://www.w3.org/2000/svg">
-                    <circle class="path-for-text" cx="75" cy="75" r="67" fill="none" stroke="none" stroke-width=".1" />
+                    <g transform-origin="center" transform="rotate(-90)">
+                      <circle class="path-for-text" cx="75" cy="75" r="67" fill="none" stroke="none" stroke-width=".1" />
+                    </g>
                   </svg>
                   <div class="screen"></div>
                   <div class="animated-text text-black text-3xl">NILUU</div>
@@ -76,7 +78,9 @@
                     height="100%"
                     viewBox="0 0 150 150"
                     xmlns="http://www.w3.org/2000/svg">
-                    <circle class="path-for-text" cx="75" cy="75" r="67" fill="none" stroke="none" stroke-width=".1" />
+                    <g transform-origin="center" transform="rotate(-90)">
+                      <circle class="path-for-text" cx="75" cy="75" r="67" fill="none" stroke="none" stroke-width=".1" />
+                    </g>
                   </svg>
                   <div class="screen"></div>
                   <div class="animated-text text-black text-3xl">NUDE</div>

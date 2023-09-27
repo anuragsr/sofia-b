@@ -110,52 +110,7 @@ const l = console.log.bind(window.console)
           tlGlobal.push(tl)
         }
 
-        function animateLetters2() {
-          let split = new SplitText('#hero1 .animated-text', { type: 'chars' }),
-            // svg = document.querySelector("svg"),
-            tl = gsap.timeline({
-              repeat: -1,
-              // onReverseComplete: () => tl.iteration(100)
-            }),
-            dur = 5,
-            // dur = 0.1,
-            each = dur * 0.03, // controls spacing
-            reversed = true;
-
-          // l(split)
-          tl.totalTime(tl.duration() * 100);
-          let path = MotionPathPlugin.convertToPath($("#hero1 svg .path-for-text"))
-          l(split, path)
-          let progress = tl.progress();
-          tl.totalProgress(0).clear();
-          split.chars.forEach((char, i) => {
-            let timeOffset = (i + 1) * each,
-              startTime = dur / 2 + timeOffset,
-              pathOffset = startTime / dur;
-
-            tl.to(char, {
-              motionPath: {
-                path: '#hero1 svg .path-for-text',
-                align: '#hero1 svg .path-for-text',
-                alignOrigin: [0.5, 0.5],
-                autoRotate: true,
-                start: pathOffset,
-                // start: 0,
-                // end: 1 + pathOffset
-                end: 1 + pathOffset
-              },
-              immediateRender: true,
-              duration: 5,
-              ease: 'none',
-            }, 0)
-              // .timeScale(.25)
-          });
-          tl.progress(progress);
-          tlGlobal.push(tl)
-        }
-
         // animateLetters1()
-        // animateLetters2()
         break;
     }
   }
@@ -210,36 +165,36 @@ class Home{
     const { heroFlipImages } = this
       , flipParams = [
         {
-          el: $(heroFlipImages[0]),
+          el: heroFlipImages.eq(0),
           timeOffset: .02,
-          // flipScale: .75,
+          flipScale: .75,
           maskTop: "25%",
-          tlStart: 0,
-          tlEnd: 1,
-          tlTimeScale: 1
+          tlStart: .64,
+          tlEnd: .805,
+          tlTimeScale: 1.25
         },
         {
           el: $(heroFlipImages[1]),
           timeOffset: .03,
-          // flipScale: .75,
+          flipScale: .75,
           maskTop: "25%",
-          tlStart: 0,
-          tlEnd: 1,
-          tlTimeScale: 1
+          tlStart: .16,
+          tlEnd: .4,
+          tlTimeScale: 1.35
         },
         {
           el: $(heroFlipImages[2]),
-          timeOffset: .03,
-          // flipScale: .75,
+          timeOffset: .035,
+          flipScale: .75,
           maskTop: "25%",
-          tlStart: 0,
-          tlEnd: 1,
-          tlTimeScale: 1
+          tlStart: .16,
+          tlEnd: .42,
+          tlTimeScale: 1.45
         },
         {
           el: $(heroFlipImages[3]),
           timeOffset: .03,
-          // flipScale: .75,
+          flipScale: .75,
           maskTop: "25%",
           tlStart: 0,
           tlEnd: 1,
@@ -248,7 +203,7 @@ class Home{
         {
           el: $(heroFlipImages[4]),
           timeOffset: .02,
-          // flipScale: .75,
+          flipScale: .75,
           maskTop: "25%",
           tlStart: 0,
           tlEnd: 1,
@@ -257,7 +212,7 @@ class Home{
         {
           el: $(heroFlipImages[5]),
           timeOffset: .03,
-          // flipScale: .75,
+          flipScale: .75,
           maskTop: "25%",
           tlStart: 0,
           tlEnd: 1,
@@ -266,7 +221,7 @@ class Home{
         {
           el: $(heroFlipImages[6]),
           timeOffset: .03,
-          // flipScale: .75,
+          flipScale: .75,
           maskTop: "25%",
           tlStart: 0,
           tlEnd: 1,
@@ -275,7 +230,7 @@ class Home{
         {
           el: $(heroFlipImages[7]),
           timeOffset: .03,
-          // flipScale: .75,
+          flipScale: .75,
           maskTop: "25%",
           tlStart: 0,
           tlEnd: 1,
@@ -284,7 +239,7 @@ class Home{
         {
           el: $(heroFlipImages[8]),
           timeOffset: .02,
-          // flipScale: .75,
+          flipScale: .75,
           maskTop: "25%",
           tlStart: 0,
           tlEnd: 1,
@@ -293,7 +248,7 @@ class Home{
         {
           el: $(heroFlipImages[9]),
           timeOffset: .03,
-          // flipScale: .75,
+          flipScale: .75,
           maskTop: "25%",
           tlStart: 0,
           tlEnd: 1,
@@ -302,7 +257,7 @@ class Home{
         {
           el: $(heroFlipImages[10]),
           timeOffset: .03,
-          // flipScale: .75,
+          flipScale: .75,
           maskTop: "25%",
           tlStart: 0,
           tlEnd: 1,
@@ -328,26 +283,22 @@ class Home{
         return names.join(" > ");
       }
       , singleHeroImageTls = () => {
-
-        l(this.heroFlipImages)
-
+        // l(this.heroFlipImages)
         flipParams.forEach((param, idx) => {
 
+          // Text animation timeline
           const split = new SplitText(param.el.find('.animated-text'), { type: 'chars' })
-            , tl = gsap.timeline({ repeat: -1 })
-            , dur = 5
+            , tl = gsap
+              .timeline({ paused: true })
+            , dur = 2
             , each = dur * param.timeOffset // controls spacing
-            // , path = `#section0 .grid > div.flip .path-for-text:nth-of-type(${idx + 1})`
+            , flipImage = param.el.find(".flip-inner")
 
           let path = fullPath(param.el.find(".path-for-text"))
           if(![0, 4, 8].includes(idx)) {
             MotionPathPlugin.convertToPath(path)
             path = fullPath(param.el.find(".path-for-text"))
           }
-
-          tl.set(param.el.find(".screen"), { top: param.maskTop })
-
-          // Text animation timeline
           split.chars.forEach((char, i) => {
             let timeOffset = (i + 1) * each,
               startTime = dur / 2 + timeOffset,
@@ -361,17 +312,51 @@ class Home{
                 autoRotate: true,
                 start: pathOffset,
                 end: 1 + pathOffset,
-                // start: 0,
-                // end: 1 + pathOffset
               },
               immediateRender: true,
-              duration: 5,
               ease: 'none',
             }, 0)
-            .timeScale(param.tlTimeScale) // controls animation speed
-          });
+          })
 
-          // Flip animation timeline
+          gsap.set(param.el.find(".screen"), { top: param.maskTop })
+
+          // Mouse event handlers
+          param.el.on({
+            "mouseenter" : e => {
+              gsap.to(flipImage, {
+                duration: .5,
+                scale: param.flipScale,
+                rotateX: 180
+              })
+              gsap.fromTo(tl, {
+                progress: param.tlStart
+              },{
+                delay: .2,
+                duration: 1,
+                progress: param.tlEnd,
+                onComplete: tl.pause
+              })
+              .timeScale(param.tlTimeScale) // controls animation speed
+            },
+            "mouseleave" : e => {
+              gsap.to(flipImage, {
+                delay: .2,
+                duration: .5,
+                scale: 1,
+                rotateX: 0
+              })
+              gsap.fromTo(tl, {
+                progress: tl.progress(),
+                // progress: param.tlEnd,
+              },{
+                duration: 1,
+                progress: param.tlStart,
+                onComplete: tl.pause
+              })
+              .timeScale(param.tlTimeScale) // controls animation speed
+            }
+          })
+
           tlGlobal.push(tl)
         })
       }

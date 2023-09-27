@@ -83,7 +83,6 @@
   left: 0px;
   background: #efecec;
   z-index: 1;
-  opacity: 0.9;
 }
 #home section#section0 .grid > div.flip .flip-outer {
   position: absolute;
@@ -92,12 +91,8 @@
   z-index: 1;
   perspective: 1000px;
 }
-#home section#section0 .grid > div.flip .flip-outer:hover .flip-inner {
-  transform: scale(0.75) rotateX(180deg);
-}
 #home section#section0 .grid > div.flip .flip-outer .flip-inner {
   position: relative;
-  transition: transform 0.5s;
   transform-style: preserve-3d;
 }
 #home section#section0 .grid > div.flip .flip-outer .flip-inner .flip-front, #home section#section0 .grid > div.flip .flip-outer .flip-inner .flip-back {
