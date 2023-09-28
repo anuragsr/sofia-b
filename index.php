@@ -102,7 +102,9 @@
                     height="100%"
                     viewBox="0 0 150 150"
                     xmlns="http://www.w3.org/2000/svg">
-                    <circle class="path-for-text" cx="75" cy="75" r="67" fill="none" stroke="none" stroke-width=".1" />
+                    <g transform-origin="center" transform="rotate(-90)">
+                      <circle class="path-for-text" cx="75" cy="75" r="67" fill="none" stroke="none" stroke-width=".1" />
+                    </g>
                   </svg>
                   <div class="screen"></div>
                   <div class="animated-text text-black text-3xl">PASTA</div>
@@ -138,7 +140,7 @@
                     </g>
                   </svg>
                   <div class="screen"></div>
-                  <div class="animated-text text-black text-3xl">HORIZONTAL TEXT TITLE</div>
+                  <div class="animated-text text-black text-3xl">HORIZONTAL&nbsp;TITLE</div>
                   <div class="flip-outer">
                     <div class="flip-inner">
                       <div class="flip-front">
@@ -194,7 +196,9 @@
                     height="100%"
                     viewBox="0 0 150 150"
                     xmlns="http://www.w3.org/2000/svg">
-                    <circle class="path-for-text" cx="75" cy="75" r="67" fill="none" stroke="none" stroke-width=".1" />
+                    <g transform-origin="center" transform="rotate(-90)">
+                      <circle class="path-for-text" cx="75" cy="75" r="67" fill="none" stroke="none" stroke-width=".1" />
+                    </g>
                   </svg>
                   <div class="screen"></div>
                   <div class="animated-text text-black text-3xl">DLH</div>
@@ -216,7 +220,9 @@
                     height="100%"
                     viewBox="0 0 150 150"
                     xmlns="http://www.w3.org/2000/svg">
-                    <circle class="path-for-text" cx="75" cy="75" r="67" fill="none" stroke="none" stroke-width=".1" />
+                    <g transform-origin="center" transform="rotate(-90)">
+                      <circle class="path-for-text" cx="75" cy="75" r="67" fill="none" stroke="none" stroke-width=".1" />
+                    </g>
                   </svg>
                   <div class="screen"></div>
                   <div class="animated-text text-black text-3xl">MOM'S&nbsp;EYE</div>
@@ -238,7 +244,9 @@
                     height="100%"
                     viewBox="0 0 150 150"
                     xmlns="http://www.w3.org/2000/svg">
-                    <circle class="path-for-text" cx="75" cy="75" r="67" fill="none" stroke="none" stroke-width=".1" />
+                    <g transform-origin="center" transform="rotate(-90)">
+                      <circle class="path-for-text" cx="75" cy="75" r="67" fill="none" stroke="none" stroke-width=".1" />
+                    </g>
                   </svg>
                   <div class="screen"></div>
                   <div class="animated-text text-black text-3xl">SHOP&nbsp;LX</div>
@@ -293,10 +301,12 @@
                     height="100%"
                     viewBox="0 0 150 150"
                     xmlns="http://www.w3.org/2000/svg">
-                    <circle class="path-for-text" cx="75" cy="75" r="67" fill="none" stroke="none" stroke-width=".1" />
+                    <g transform-origin="center" transform="rotate(-90)">
+                      <circle class="path-for-text" cx="75" cy="75" r="67" fill="none" stroke="none" stroke-width=".1" />
+                    </g>
                   </svg>
                   <div class="screen"></div>
-                  <div class="animated-text text-black text-3xl">SHOP&nbsp;LX</div>
+                  <div class="animated-text text-black text-3xl">PASTA</div>
                   <div class="flip-outer">
                     <div class="flip-inner">
                       <div class="flip-front">
@@ -315,10 +325,12 @@
                     height="100%"
                     viewBox="0 0 150 150"
                     xmlns="http://www.w3.org/2000/svg">
-                    <circle class="path-for-text" cx="75" cy="75" r="67" fill="none" stroke="none" stroke-width=".1" />
+                    <g transform-origin="center" transform="rotate(-90)">
+                      <circle class="path-for-text" cx="75" cy="75" r="67" fill="none" stroke="none" stroke-width=".1" />
+                    </g>
                   </svg>
                   <div class="screen"></div>
-                  <div class="animated-text text-black text-3xl">SHOP&nbsp;LX</div>
+                  <div class="animated-text text-black text-3xl">MOM'S&nbsp;EYE</div>
                   <div class="flip-outer">
                     <div class="flip-inner">
                       <div class="flip-front">

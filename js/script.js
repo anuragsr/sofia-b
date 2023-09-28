@@ -1,7 +1,4 @@
 const l = console.log.bind(window.console)
-  , getRandom = (min, max) =>
-    Math.floor(Math.random() * (max - min + 1)) + min
-  , loadingCtn = document.querySelector('.loading-container')
   , loadingScreen = document.querySelector('.loading-screen')
   // Function to add the page transition screen
   , pageTransitionIn = () => {
@@ -53,64 +50,6 @@ const l = console.log.bind(window.console)
       default: // home
         // Home animation
         new Home(container)
-
-        // gsap.to(".motion-text", {
-        //   motionPath: {
-        //     path: "#MyPath",
-        //     align: "#MyPath",
-        //     alignOrigin: [0.5, 0.5],
-        //     autoRotate: true
-        //   },
-        //   duration: 5,
-        //   ease: "power1.inOut",
-        //   repeat: -1
-        // });
-
-        function animateLetters1() {
-          let split = new SplitText('#hero0 .animated-text', { type: 'chars' }),
-            // svg = document.querySelector("svg"),
-            tl = gsap.timeline({
-              repeat: -1,
-              // onReverseComplete: () => tl.iteration(100)
-            }),
-            dur = 5,
-            // dur = 0.1,
-            each = dur * 0.02, // controls spacing
-            reversed = true;
-
-          // l(split)
-          // tl.totalTime(tl.duration() * 100);
-
-          // let progress = tl.progress();
-          // tl.totalProgress(0).clear();
-          split.chars.forEach((char, i) => {
-            let timeOffset = (i + 1) * each,
-              startTime = dur / 2 + timeOffset,
-              pathOffset = startTime / dur;
-
-            tl.to(char, {
-              motionPath: {
-                path: '#hero0 svg .path-for-text',
-                align: '#hero0 svg .path-for-text',
-                alignOrigin: [0.5, 0.5],
-                autoRotate: true,
-                start: pathOffset,
-                // start: 0,
-                // end: 1 + pathOffset
-                end: 1 + pathOffset
-              },
-              immediateRender: true,
-              duration: 5,
-              ease: 'none',
-            }, 0)
-              // .timeScale(.25)
-          });
-          // tl.progress(progress);
-
-          tlGlobal.push(tl)
-        }
-
-        // animateLetters1()
         break;
     }
   }
@@ -149,18 +88,6 @@ class Home{
     // this.addEvents()
   }
   heroImagesAnims(){
-    // // Appearing animation
-    // gsap.timeline()
-    //   .from(this.heroImages, {
-    //     delay: 1,
-    //     opacity: 0,
-    //     x: "random(-50, 50, 5)",
-    //     y: "random(-50, 50, 5)",
-    //     scale: .9,
-    //     stagger: .05,
-    //     duration: .75
-    //   })
-
     // Individual animations
     const { heroFlipImages } = this
       , flipParams = [
@@ -169,99 +96,99 @@ class Home{
           timeOffset: .02,
           flipScale: .75,
           maskTop: "25%",
-          tlStart: .64,
-          tlEnd: .805,
-          tlTimeScale: 1.25
+          start: .64,
+          end: .805,
+          timeScale: 1.25
         },
         {
           el: $(heroFlipImages[1]),
           timeOffset: .03,
           flipScale: .75,
           maskTop: "25%",
-          tlStart: .16,
-          tlEnd: .4,
-          tlTimeScale: 1.35
+          start: .16,
+          end: .4,
+          timeScale: 1.35
         },
         {
           el: $(heroFlipImages[2]),
           timeOffset: .035,
           flipScale: .75,
           maskTop: "25%",
-          tlStart: .16,
-          tlEnd: .42,
-          tlTimeScale: 1.45
+          start: .16,
+          end: .42,
+          timeScale: 1.45
         },
         {
           el: $(heroFlipImages[3]),
-          timeOffset: .03,
+          timeOffset: .035,
           flipScale: .75,
           maskTop: "25%",
-          tlStart: 0,
-          tlEnd: 1,
-          tlTimeScale: 1
+          start: .15,
+          end: .4,
+          timeScale: 1.45
         },
         {
           el: $(heroFlipImages[4]),
           timeOffset: .02,
-          flipScale: .75,
+          flipScale: .73,
           maskTop: "25%",
-          tlStart: 0,
-          tlEnd: 1,
-          tlTimeScale: 1
+          start: .075,
+          end: .435,
+          timeScale: 1.35
         },
         {
           el: $(heroFlipImages[5]),
           timeOffset: .03,
           flipScale: .75,
           maskTop: "25%",
-          tlStart: 0,
-          tlEnd: 1,
-          tlTimeScale: 1
+          start: .2,
+          end: .435,
+          timeScale: 1.35
         },
         {
           el: $(heroFlipImages[6]),
-          timeOffset: .03,
+          timeOffset: .035,
           flipScale: .75,
-          maskTop: "25%",
-          tlStart: 0,
-          tlEnd: 1,
-          tlTimeScale: 1
+          maskTop: "27%",
+          start: 0,
+          end: .33,
+          timeScale: 1.35
         },
         {
           el: $(heroFlipImages[7]),
           timeOffset: .03,
           flipScale: .75,
           maskTop: "25%",
-          tlStart: 0,
-          tlEnd: 1,
-          tlTimeScale: 1
+          start: .0,
+          end: .36,
+          timeScale: 1.35
         },
         {
           el: $(heroFlipImages[8]),
           timeOffset: .02,
-          flipScale: .75,
+          flipScale: .73,
           maskTop: "25%",
-          tlStart: 0,
-          tlEnd: 1,
-          tlTimeScale: 1
+          start: .075,
+          end: .465,
+          timeScale: 1.45
         },
         {
           el: $(heroFlipImages[9]),
-          timeOffset: .03,
+          timeOffset: .035,
           flipScale: .75,
           maskTop: "25%",
-          tlStart: 0,
-          tlEnd: 1,
-          tlTimeScale: 1
+          start: .15,
+          end: .4,
+          timeScale: 1.45
         },
         {
           el: $(heroFlipImages[10]),
-          timeOffset: .03,
+          timeOffset: .035,
           flipScale: .75,
-          maskTop: "25%",
-          tlStart: 0,
-          tlEnd: 1,
-          tlTimeScale: 1
+          maskTop: "27%",
+          start: 0,
+          end: .33,
+          timeScale: 1.35
         },
       ]
       , fullPath = el => {
@@ -283,7 +210,7 @@ class Home{
         return names.join(" > ");
       }
       , singleHeroImageTls = () => {
-        // l(this.heroFlipImages)
+
         flipParams.forEach((param, idx) => {
 
           // Text animation timeline
@@ -329,14 +256,14 @@ class Home{
                 rotateX: 180
               })
               gsap.fromTo(tl, {
-                progress: param.tlStart
+                progress: param.start
               },{
                 delay: .2,
                 duration: 1,
-                progress: param.tlEnd,
+                progress: param.end,
                 onComplete: tl.pause
               })
-              .timeScale(param.tlTimeScale) // controls animation speed
+              .timeScale(param.timeScale) // controls animation speed
             },
             "mouseleave" : e => {
               gsap.to(flipImage, {
@@ -347,13 +274,13 @@ class Home{
               })
               gsap.fromTo(tl, {
                 progress: tl.progress(),
-                // progress: param.tlEnd,
+                // progress: param.end,
               },{
                 duration: 1,
-                progress: param.tlStart,
+                progress: param.start,
                 onComplete: tl.pause
               })
-              .timeScale(param.tlTimeScale) // controls animation speed
+              .timeScale(param.timeScale) // controls animation speed
             }
           })
 
@@ -361,7 +288,20 @@ class Home{
         })
       }
 
-    singleHeroImageTls()
+    // Appearing animation
+    gsap
+      .timeline({
+        onComplete: singleHeroImageTls
+      })
+      .from(this.heroImages, {
+        delay: 1,
+        opacity: 0,
+        x: "random(-50, 50, 5)",
+        y: "random(-50, 50, 5)",
+        scale: .9,
+        stagger: .05,
+        duration: .75
+      })
   }
   scrollAnim(){
     gsap.timeline({
