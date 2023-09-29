@@ -11,9 +11,9 @@
     z-index: 1031;
     background: #fff;
   }
-</style>-->
+</style>
+<div class="preload"><img src="img/loader.svg" height="50" alt="" /></div>-->
 
-<!--<div class="preload"><img src="img/loader.svg" height="50" alt="" /></div>-->
 <div class="loading-container">
   <div class="loading-screen"></div>
 </div>
