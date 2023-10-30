@@ -21,7 +21,7 @@
 <header class="absolute w-full left-0 top-0 z-[1] mt-10 md:mt-14">
   <div class="container flex justify-between mx-auto px-4">
     <a href="./" title="Home">
-      <img src="img/Artboard 78@2x.png" alt=""/>
+      <img class="logo" src="img/logo-large.png" alt="" />
     </a>
     <div>
       <nav>
@@ -33,11 +33,13 @@
                   aria-expanded="false">
             <span class="sr-only">Open main menu</span>
             <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M1 1h15M1 7h15M1 13h15" />
             </svg>
           </button>
           <div class="hidden w-full md:block" id="navbar-default">
-            <ul class="font-medium flex flex-col justify-around p-4 md:p-0 mt-4 md:flex-row md:space-x-8 md:mt-0 md:border-0">
+            <ul
+              class="font-medium flex flex-col justify-around p-4 md:p-0 mt-4 md:flex-row md:space-x-8 md:mt-0 md:border-0">
               <li>
                 <a href="./work.php">
                   Work

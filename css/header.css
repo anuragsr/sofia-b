@@ -18,12 +18,15 @@
   background-color: #efecec;
 }
 
-nav {
+header img.logo {
+  height: 67px;
+}
+header nav {
   font-size: 18px;
   font-weight: 400;
   line-height: 22px;
 }
-nav a {
+header nav a {
   text-transform: uppercase;
 }
 

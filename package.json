@@ -6,8 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "grunt": "grunt",
-    "tailwind": "npx tailwindcss -i ./css/input.css -o ./css/output.css --watch",
-    "dev": "concurrently \"grunt\" \"npx tailwindcss -i ./css/input.css -o ./css/output.css --watch\""
+    "tailwind": "npx tailwindcss -i ./css/input.css -o ./css/output.css --watch"
   },
   "repository": {
     "type": "git",
